@@ -4,9 +4,16 @@ namespace WeatherApplicationAPI.WeatherService
 {
     public class WeatherServiceAdapter : IWeather
     {
-        public WeatherServiceAdapter()
-        {
+        WeatherServiceRest _weatherService;
 
+        public WeatherServiceAdapter(WeatherServiceRest weatherServiceRest)
+        {
+            _weatherService = weatherServiceRest;
+        }
+
+        public string GetCurrentWeatherForecast(string city, string country)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

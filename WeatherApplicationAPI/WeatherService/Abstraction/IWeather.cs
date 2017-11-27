@@ -2,5 +2,6 @@
 {
     public interface IWeather
     {
+       string GetCurrentWeatherForecast(string city, string country);
     }
 }
