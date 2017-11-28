@@ -1,8 +1,9 @@
-﻿using WeatherApplicationAPI.WeatherService.Abstraction;
+﻿using WeatherApplicationAPI.Models;
+using WeatherApplicationAPI.WeatherService.Abstraction;
 
 namespace WeatherApplicationAPI.WeatherService
 {
-    public class WeatherServiceAdapter : IWeather
+    public class WeatherServiceAdapter : IWeatherService
     {
         WeatherServiceRest _weatherService;
 
@@ -11,9 +12,11 @@ namespace WeatherApplicationAPI.WeatherService
             _weatherService = weatherServiceRest;
         }
 
-        public string GetCurrentWeatherForecast(string city, string country)
+        public WeatherForecast GetCurrentWeatherForecast(string city, string country)
         {
-            throw new System.NotImplementedException();
+            var result = _weatherService.CallWeatherService(country, city);
+
+            return new WeatherForecast();
         }
     }
 }

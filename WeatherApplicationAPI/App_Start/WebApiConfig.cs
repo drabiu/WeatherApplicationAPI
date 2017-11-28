@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using WeatherApplicationAPI.WeatherService;
+using WeatherApplicationAPI.WeatherService.Abstraction;
 
 namespace WeatherApplicationAPI
 {
@@ -19,6 +21,9 @@ namespace WeatherApplicationAPI
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            IWeatherService weather =  new WeatherServiceAdapter(new WeatherServiceRest());
+            weather.GetCurrentWeatherForecast("Gdynia", "Poland");
         }
     }
 }
