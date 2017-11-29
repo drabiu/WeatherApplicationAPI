@@ -2,9 +2,6 @@
 using Autofac.Integration.WebApi;
 using System.Web.Http;
 using WeatherApplicationAPI.App_Start;
-using WeatherApplicationAPI.WeatherService;
-using WeatherApplicationAPI.WeatherService.Abstraction;
-using WeatherServiceRest;
 
 namespace WeatherApplicationAPI
 {

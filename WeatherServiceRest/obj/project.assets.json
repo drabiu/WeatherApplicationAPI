@@ -198,7 +198,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mdrab\\.nuget\\packages\\": {},
+    "C:\\Users\\drabi\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -207,17 +207,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\mdrab\\Documents\\Visual Studio 2017\\Projects\\WeatherApplicationAPI\\WeatherServiceRest\\WeatherServiceRest.csproj",
+      "projectUniqueName": "C:\\Users\\drabi\\Documents\\GitHub\\WeatherApplicationAPI\\WeatherServiceRest\\WeatherServiceRest.csproj",
       "projectName": "WeatherServiceRest",
-      "projectPath": "C:\\Users\\mdrab\\Documents\\Visual Studio 2017\\Projects\\WeatherApplicationAPI\\WeatherServiceRest\\WeatherServiceRest.csproj",
-      "packagesPath": "C:\\Users\\mdrab\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mdrab\\Documents\\Visual Studio 2017\\Projects\\WeatherApplicationAPI\\WeatherServiceRest\\obj\\",
+      "projectPath": "C:\\Users\\drabi\\Documents\\GitHub\\WeatherApplicationAPI\\WeatherServiceRest\\WeatherServiceRest.csproj",
+      "packagesPath": "C:\\Users\\drabi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\drabi\\Documents\\GitHub\\WeatherApplicationAPI\\WeatherServiceRest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\mdrab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\drabi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
