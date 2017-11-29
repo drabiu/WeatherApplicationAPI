@@ -15,7 +15,6 @@ C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\Weath
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\obj\Debug\WeatherApplicationAPI.csproj.CoreCompileInputs.cache
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\obj\Debug\WeatherApplicationAPI.dll
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\obj\Debug\WeatherApplicationAPI.pdb
-C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\RestSharp.dll
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\Microsoft.Win32.Primitives.dll
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\netstandard.dll
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\System.AppContext.dll
@@ -114,3 +113,11 @@ C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\Weath
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\System.Xml.XPath.XDocument.dll
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\WeatherServiceRest.dll
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\WeatherServiceRest.pdb
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\Autofac.dll
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\AutoMapper.dll
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\Autofac.xml
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\AutoMapper.xml
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\Autofac.Integration.WebApi.dll
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\NLog.dll
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\Autofac.Integration.WebApi.xml
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\NLog.xml
