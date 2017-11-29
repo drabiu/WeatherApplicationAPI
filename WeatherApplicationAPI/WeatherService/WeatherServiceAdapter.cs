@@ -1,13 +1,14 @@
 ﻿using WeatherApplicationAPI.Models;
 using WeatherApplicationAPI.WeatherService.Abstraction;
+using WeatherServiceRest;
 
 namespace WeatherApplicationAPI.WeatherService
 {
     public class WeatherServiceAdapter : IWeatherService
     {
-        WeatherServiceRest _weatherService;
+        WeatherServiceRestful _weatherService;
 
-        public WeatherServiceAdapter(WeatherServiceRest weatherServiceRest)
+        public WeatherServiceAdapter(WeatherServiceRestful weatherServiceRest)
         {
             _weatherService = weatherServiceRest;
         }
