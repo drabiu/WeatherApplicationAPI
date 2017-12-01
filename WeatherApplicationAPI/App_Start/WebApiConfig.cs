@@ -25,9 +25,6 @@ namespace WeatherApplicationAPI
             );
 
             config.DependencyResolver = new AutofacWebApiDependencyResolver(_container);
-
-            //IWeatherService weather =  new WeatherServiceAdapter(new WeatherServiceRestful(new WeatherServiceConfiguration()));
-            //weather.GetCurrentWeatherForecast("Gdynia", "Poland");
         }
     }
 }

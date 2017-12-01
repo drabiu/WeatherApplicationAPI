@@ -1,16 +1,18 @@
-﻿using System.Web.Http;
+﻿using AutoMapper;
+using System.Web.Http;
 using WeatherApplicationAPI.WeatherService.Abstraction;
-using WeatherServiceRest.Abstraction;
 
 namespace WeatherApplicationAPI.Controllers
 {
     public class WeatherController : ApiController
     {
         private IWeatherService _weatherService;
+        private IMapper _mapper;
 
-        public WeatherController(IWeatherService service)
+        public WeatherController(IWeatherService service, IMapper mapper)
         {
             _weatherService = service;
+            _mapper = mapper;
         }
 
         [Route("api/weather/{country}/{city}")]

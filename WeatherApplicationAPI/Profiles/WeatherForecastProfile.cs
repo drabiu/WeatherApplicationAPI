@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using WeatherApplicationAPI.Helpers;
 using WeatherApplicationAPI.Models;
-using WeatherServiceRest.Abstraction;
+using WeatherServiceRestful.Abstraction;
 
 namespace WeatherApplicationAPI.Profiles
 {
@@ -9,7 +9,7 @@ namespace WeatherApplicationAPI.Profiles
     {
         public WeatherForecastProfile(IWeatherServiceRestConfiguration configuration)
         {
-            CreateMap<WeatherServiceRest.Models.WeatherService, WeatherForecast>()
+            CreateMap<WeatherServiceRestful.Models.WeatherService, WeatherForecast>()
                 .ForMember(dest => dest.humidity, opt => opt.MapFrom(src => src.main.humidity))
                 .ForMember(dest => dest.temperature, opt => opt.UseValue(new Temperature()))
                 .ForPath(dest => dest.temperature.value, opt => opt.MapFrom(src => src.main.temp))

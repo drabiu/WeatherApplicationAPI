@@ -1,6 +1,6 @@
 ﻿using System.Configuration;
-using WeatherServiceRest.Abstraction;
-using WeatherServiceRest.Enums;
+using WeatherServiceRestful.Abstraction;
+using WeatherServiceRestful.Enums;
 
 namespace WeatherApplicationAPI.WeatherService
 {

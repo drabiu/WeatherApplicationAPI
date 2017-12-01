@@ -1,5 +1,5 @@
 ﻿using WeatherApplicationAPI.Enums;
-using WeatherServiceRest.Enums;
+using WeatherServiceRestful.Enums;
 
 namespace WeatherApplicationAPI.Helpers
 {

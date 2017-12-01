@@ -1,16 +1,15 @@
 ﻿using AutoMapper;
 using WeatherApplicationAPI.Models;
 using WeatherApplicationAPI.WeatherService.Abstraction;
-using WeatherServiceRest;
 
 namespace WeatherApplicationAPI.WeatherService
 {
     public class WeatherServiceAdapter : IWeatherService
     {
-        WeatherServiceRestful _weatherService;
+        WeatherServiceRestful.WeatherServiceRestful _weatherService;
         IMapper _mapper;
 
-        public WeatherServiceAdapter(WeatherServiceRestful weatherServiceRest, IMapper mapper)
+        public WeatherServiceAdapter(WeatherServiceRestful.WeatherServiceRestful weatherServiceRest, IMapper mapper)
         {
             _weatherService = weatherServiceRest;
             _mapper = mapper;
@@ -20,7 +19,6 @@ namespace WeatherApplicationAPI.WeatherService
         {
             var result = _weatherService.CallWeatherService(country, city);
             var weather = _mapper.Map<WeatherForecast>(result);
-            //var weather = new WeatherForecast();
 
             return weather;
         }

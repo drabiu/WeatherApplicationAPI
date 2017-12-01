@@ -6,8 +6,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using WeatherApplicationAPI.WeatherService;
 using WeatherApplicationAPI.WeatherService.Abstraction;
-using WeatherServiceRest;
-using WeatherServiceRest.Abstraction;
+using WeatherServiceRestful.Abstraction;
 
 namespace WeatherApplicationAPI.App_Start
 {
@@ -21,7 +20,7 @@ namespace WeatherApplicationAPI.App_Start
 
             builder.RegisterType<WeatherServiceConfiguration>().As<IWeatherServiceRestConfiguration>();
             builder.RegisterType<WeatherServiceAdapter>().As<IWeatherService>();
-            builder.RegisterType<WeatherServiceRestful>().AsSelf();
+            builder.RegisterType<WeatherServiceRestful.WeatherServiceRestful>().AsSelf();
 
             RegisterAutoMapper(builder);
          
