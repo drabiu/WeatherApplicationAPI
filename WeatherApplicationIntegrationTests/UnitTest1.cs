@@ -1,12 +1,10 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Xunit;
+using NSubstitute;
 
 namespace WeatherApplicationIntegrationTests
 {
-    [TestClass]
     public class UnitTest1
     {
-        [TestMethod]
         public void TestMethod1()
         {
         }
