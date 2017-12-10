@@ -61,3 +61,5 @@ C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAcceptan
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAcceptanceTests\obj\Debug\WeatherApplicationAcceptanceTests.csproj.CoreCompileInputs.cache
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAcceptanceTests\obj\Debug\WeatherApplicationAcceptanceTests.dll
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAcceptanceTests\obj\Debug\WeatherApplicationAcceptanceTests.pdb
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAcceptanceTests\bin\Debug\WebDriver.Support.dll
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAcceptanceTests\bin\Debug\WebDriver.Support.xml
