@@ -1,6 +1,5 @@
 ﻿using TechTalk.SpecFlow;
 using Xunit;
-using NSubstitute;
 using OpenQA.Selenium;
 using WeatherApplicationAcceptanceTests.Pages;
 using OpenQA.Selenium.Chrome;
@@ -33,10 +32,10 @@ namespace WeatherApplicationAcceptanceTests
             _weatherAppPage = new CheckWeatherApplicationPage(_driver);
         }
         
-        [Given(@"I type in ""(.*)""")]
-        public void GivenITypeIn(string p0)
+        [Given(@"I type in ""(.*)"" and ""(.*)""")]
+        public void GivenITypeIn(string country, string city)
         {
-            _weatherAppPage.ProvideLocationData("", "");
+            _weatherAppPage.ProvideLocationData(country, city);
         }
         
         [When(@"I submit the form")]
@@ -48,19 +47,28 @@ namespace WeatherApplicationAcceptanceTests
         [Then(@"I receive the temperature and humidity conditions on the day for Warsaw, Poland according to the official weather reports")]
         public void ThenIReceiveTheTemperatureAndHumidityConditionsOnTheDayForWarsawPolandAccordingToTheOfficialWeatherReports()
         {
-            ScenarioContext.Current.Pending();
+            Assert.Equal("Warsaw", _weatherAppResultPage.City());
+            Assert.Equal("Poland", _weatherAppResultPage.Country());
+            Assert.InRange<int>(_weatherAppResultPage.Humidity(), 0, 100);
+            Assert.InRange<double>(_weatherAppResultPage.Temperature(), -100, 100);
         }
         
         [Then(@"I receive the temperature and humidity conditions on the day for Gdansk, Poland according to the official weather reports")]
         public void ThenIReceiveTheTemperatureAndHumidityConditionsOnTheDayForGdanskPolandAccordingToTheOfficialWeatherReports()
         {
-            ScenarioContext.Current.Pending();
+            Assert.Equal("Gdańsk", _weatherAppResultPage.City());
+            Assert.Equal("Poland", _weatherAppResultPage.Country());
+            Assert.InRange<int>(_weatherAppResultPage.Humidity(), 0, 100);
+            Assert.InRange<double>(_weatherAppResultPage.Temperature(), -100, 100);
         }
         
         [Then(@"I receive the temperature and humidity conditions on the day for Berlin, Germany according to the official weather reports")]
         public void ThenIReceiveTheTemperatureAndHumidityConditionsOnTheDayForBerlinGermanyAccordingToTheOfficialWeatherReports()
         {
-            ScenarioContext.Current.Pending();
+            Assert.Equal("Berlin", _weatherAppResultPage.City());
+            Assert.Equal("Germany", _weatherAppResultPage.Country());
+            Assert.InRange<int>(_weatherAppResultPage.Humidity(), 0, 100);
+            Assert.InRange<double>(_weatherAppResultPage.Temperature(), -100, 100);
         }
     }
 }

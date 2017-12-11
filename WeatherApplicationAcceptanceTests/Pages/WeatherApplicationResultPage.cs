@@ -36,14 +36,14 @@ namespace WeatherApplicationAcceptanceTests.Pages
             return _country.Text;
         }
 
-        public string Temperature()
+        public double Temperature()
         {
-            return _temperature.Text;
+            return double.Parse(_temperature.Text);
         }
 
-        public string Humidity()
+        public int Humidity()
         {
-            return _humidity.Text;
+            return int.Parse(_humidity.Text);
         }
     }
 }

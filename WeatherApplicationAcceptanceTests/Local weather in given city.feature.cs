@@ -17,23 +17,19 @@ namespace WeatherApplicationAcceptanceTests
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.2.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public partial class LocalWeatherInGivenCityFeature : Xunit.IClassFixture<LocalWeatherInGivenCityFeature.FixtureData>, System.IDisposable
+    [TechTalk.SpecRun.FeatureAttribute("Local weather in given city", Description="\tAs a delegated employee\r\n\tI want to check what the weather is like in a city and" +
+        " country of my choosing\r\n\tSo that I know how to dress for the business trip over" +
+        " there.", SourceFile="Local weather in given city.feature", SourceLine=0)]
+    public partial class LocalWeatherInGivenCityFeature
     {
         
-        private static TechTalk.SpecFlow.ITestRunner testRunner;
-        
-        private Xunit.Abstractions.ITestOutputHelper _testOutputHelper;
+        private TechTalk.SpecFlow.ITestRunner testRunner;
         
 #line 1 "Local weather in given city.feature"
 #line hidden
         
-        public LocalWeatherInGivenCityFeature(LocalWeatherInGivenCityFeature.FixtureData fixtureData, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
-        {
-            this._testOutputHelper = testOutputHelper;
-            this.TestInitialize();
-        }
-        
-        public static void FeatureSetup()
+        [TechTalk.SpecRun.FeatureInitialize()]
+        public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Local weather in given city", "\tAs a delegated employee\r\n\tI want to check what the weather is like in a city and" +
@@ -42,7 +38,8 @@ namespace WeatherApplicationAcceptanceTests
             testRunner.OnFeatureStart(featureInfo);
         }
         
-        public static void FeatureTearDown()
+        [TechTalk.SpecRun.FeatureCleanup()]
+        public virtual void FeatureTearDown()
         {
             testRunner.OnFeatureEnd();
             testRunner = null;
@@ -52,6 +49,7 @@ namespace WeatherApplicationAcceptanceTests
         {
         }
         
+        [TechTalk.SpecRun.ScenarioCleanup()]
         public virtual void ScenarioTearDown()
         {
             testRunner.OnScenarioEnd();
@@ -60,7 +58,6 @@ namespace WeatherApplicationAcceptanceTests
         public virtual void ScenarioSetup(TechTalk.SpecFlow.ScenarioInfo scenarioInfo)
         {
             testRunner.OnScenarioStart(scenarioInfo);
-            testRunner.ScenarioContext.ScenarioContainer.RegisterInstanceAs<Xunit.Abstractions.ITestOutputHelper>(_testOutputHelper);
         }
         
         public virtual void ScenarioCleanup()
@@ -68,15 +65,8 @@ namespace WeatherApplicationAcceptanceTests
             testRunner.CollectScenarioErrors();
         }
         
-        void System.IDisposable.Dispose()
-        {
-            this.ScenarioTearDown();
-        }
-        
-        [Xunit.FactAttribute(DisplayName="Check weather for Warsaw")]
-        [Xunit.TraitAttribute("FeatureTitle", "Local weather in given city")]
-        [Xunit.TraitAttribute("Description", "Check weather for Warsaw")]
-        [Xunit.TraitAttribute("Category", "warsaw")]
+        [TechTalk.SpecRun.ScenarioAttribute("Check weather for Warsaw", new string[] {
+                "warsaw"}, SourceLine=6)]
         public virtual void CheckWeatherForWarsaw()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check weather for Warsaw", new string[] {
@@ -86,82 +76,62 @@ this.ScenarioSetup(scenarioInfo);
 #line 8
  testRunner.Given("a webpage with a form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 9
- testRunner.And("I type in \"Poland\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I type in \"Poland\" and \"Warsaw\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 10
- testRunner.And("I type in \"Warsaw\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 11
  testRunner.When("I submit the form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 12
+#line 11
  testRunner.Then("I receive the temperature and humidity conditions on the day for Warsaw, Poland a" +
                     "ccording to the official weather reports", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
-        [Xunit.FactAttribute(DisplayName="Check weather for Gdansk")]
-        [Xunit.TraitAttribute("FeatureTitle", "Local weather in given city")]
-        [Xunit.TraitAttribute("Description", "Check weather for Gdansk")]
-        [Xunit.TraitAttribute("Category", "gdansk")]
+        [TechTalk.SpecRun.ScenarioAttribute("Check weather for Gdansk", new string[] {
+                "gdansk"}, SourceLine=13)]
         public virtual void CheckWeatherForGdansk()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check weather for Gdansk", new string[] {
                         "gdansk"});
-#line 15
+#line 14
 this.ScenarioSetup(scenarioInfo);
-#line 16
+#line 15
  testRunner.Given("a webpage with a form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 16
+ testRunner.And("I type in \"Poland\" and \"Gdańsk\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 17
- testRunner.And("I type in \"Poland\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 18
- testRunner.And("I type in \"Gdansk\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 19
  testRunner.When("I submit the form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 20
+#line 18
  testRunner.Then("I receive the temperature and humidity conditions on the day for Gdansk, Poland a" +
                     "ccording to the official weather reports", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
-        [Xunit.FactAttribute(DisplayName="Check weather for Berlin")]
-        [Xunit.TraitAttribute("FeatureTitle", "Local weather in given city")]
-        [Xunit.TraitAttribute("Description", "Check weather for Berlin")]
-        [Xunit.TraitAttribute("Category", "berlin")]
+        [TechTalk.SpecRun.ScenarioAttribute("Check weather for Berlin", new string[] {
+                "berlin"}, SourceLine=20)]
         public virtual void CheckWeatherForBerlin()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check weather for Berlin", new string[] {
                         "berlin"});
-#line 23
+#line 21
 this.ScenarioSetup(scenarioInfo);
-#line 24
+#line 22
  testRunner.Given("a webpage with a form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 25
- testRunner.And("I type in \"Germany\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 26
- testRunner.And("I type in \"Berlin\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 27
+#line 23
+ testRunner.And("I type in \"Germany\" and \"Berlin\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 24
  testRunner.When("I submit the form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 28
+#line 25
  testRunner.Then("I receive the temperature and humidity conditions on the day for Berlin, Germany " +
                     "according to the official weather reports", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.2.0.0")]
-        [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        public class FixtureData : System.IDisposable
+        [TechTalk.SpecRun.TestRunCleanup()]
+        public virtual void TestRunCleanup()
         {
-            
-            public FixtureData()
-            {
-                LocalWeatherInGivenCityFeature.FeatureSetup();
-            }
-            
-            void System.IDisposable.Dispose()
-            {
-                LocalWeatherInGivenCityFeature.FeatureTearDown();
-            }
+            TechTalk.SpecFlow.TestRunnerManager.GetTestRunner().OnTestRunEnd();
         }
     }
 }

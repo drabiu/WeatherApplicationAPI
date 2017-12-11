@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using Autofac.Integration.WebApi;
 using AutoMapper;
+using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
@@ -21,6 +22,7 @@ namespace WeatherApplicationAPI.App_Start
             builder.RegisterType<WeatherServiceConfiguration>().As<IWeatherServiceRestConfiguration>();
             builder.RegisterType<WeatherServiceAdapter>().As<IWeatherService>();
             builder.RegisterType<WeatherServiceRestful.WeatherServiceRestful>().AsSelf();
+            builder.RegisterType<RestClient>().As<IRestClient>();
 
             RegisterAutoMapper(builder);
          

@@ -6,23 +6,20 @@
 @warsaw
 Scenario: Check weather for Warsaw
 	Given a webpage with a form
-	And I type in "Poland"
-	And I type in "Warsaw"
+	And I type in "Poland" and "Warsaw"
 	When I submit the form
 	Then I receive the temperature and humidity conditions on the day for Warsaw, Poland according to the official weather reports
 
 @gdansk
 Scenario: Check weather for Gdansk
 	Given a webpage with a form
-	And I type in "Poland"
-	And I type in "Gdansk"
+	And I type in "Poland" and "Gdańsk"
 	When I submit the form
 	Then I receive the temperature and humidity conditions on the day for Gdansk, Poland according to the official weather reports
 
 @berlin
 Scenario: Check weather for Berlin
 	Given a webpage with a form
-	And I type in "Germany"
-	And I type in "Berlin"
+	And I type in "Germany" and "Berlin"
 	When I submit the form
 	Then I receive the temperature and humidity conditions on the day for Berlin, Germany according to the official weather reports 

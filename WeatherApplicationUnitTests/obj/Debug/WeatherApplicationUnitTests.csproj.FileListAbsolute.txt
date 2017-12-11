@@ -22,7 +22,6 @@ C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTest
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\xunit.assert.xml
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\xunit.core.xml
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\xunit.execution.desktop.xml
-C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\obj\Debug\WeatherApplicationUnitTests.csprojResolveAssemblyReference.cache
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\obj\Debug\WeatherApplicationUnitTests.csproj.CoreCompileInputs.cache
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\obj\Debug\WeatherApplicationUnitTests.dll
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\obj\Debug\WeatherApplicationUnitTests.pdb
