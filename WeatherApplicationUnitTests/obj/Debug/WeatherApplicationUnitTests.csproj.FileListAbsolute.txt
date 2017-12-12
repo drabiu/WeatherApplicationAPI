@@ -25,3 +25,7 @@ C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTest
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\obj\Debug\WeatherApplicationUnitTests.csproj.CoreCompileInputs.cache
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\obj\Debug\WeatherApplicationUnitTests.dll
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\obj\Debug\WeatherApplicationUnitTests.pdb
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\RestSharp.dll
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\WeatherServiceRestful.dll
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\WeatherServiceRestful.pdb
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\obj\Debug\WeatherApplicationUnitTests.csprojResolveAssemblyReference.cache

@@ -1,0 +1,40 @@
+﻿2017-12-12T13:10:26.8578947+01:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2017-12-12T13:10:27.0120745+01:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAcceptanceTests\bin\Debug\WeatherApplicationAcceptanceTests.dll
+2017-12-12T13:10:27.0130762+01:00;VSTestExecutionThread;Info;Profile: Default
+2017-12-12T13:10:27.1316952+01:00;Thread#14;Info;Discovering target: Default
+2017-12-12T13:10:27.1407064+01:00;Thread#14;Info;Discovering tests from assembly: C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAcceptanceTests\bin\Debug\WeatherApplicationAcceptanceTests.dll
+Appdomain Disposed
+Test Suite Dump
+#0: WeatherApplicationAcceptanceTests/Default - 
+#1: Default - 
+#2: WeatherApplicationAcceptanceTests - 
+#3: Local weather in given city - 
+#6: Check weather for Berlin - TestAssembly:WeatherApplicationAcceptanceTests/Feature:Local+weather+in+given+city/Scenario:Check+weather+for+Berlin
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #6 from normal test queue 
+Thread#0:Scheduler: considering testitem #6 for thread 0
+Thread#0:TestItem#6:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#6:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#6:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #6 for thread 0
+Thread#0:Scheduler: Test #6 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for WeatherApplicationAcceptanceTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\drabi\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.6.3\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #6/0 is started on thread #0
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread
+Thread#0: Test #6/0 is finished on thread #0 as InitializationFailed within 0,1151163 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread -1
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 1
+Succeeded: 0
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 1

@@ -3,6 +3,7 @@ using Xunit;
 using OpenQA.Selenium;
 using WeatherApplicationAcceptanceTests.Pages;
 using OpenQA.Selenium.Chrome;
+using System.Configuration;
 
 namespace WeatherApplicationAcceptanceTests
 {
@@ -28,7 +29,7 @@ namespace WeatherApplicationAcceptanceTests
         [Given(@"a webpage with a form")]
         public void GivenAWebpageWithAForm()
         {
-            _driver.Navigate().GoToUrl("");
+            _driver.Navigate().GoToUrl(ConfigurationManager.AppSettings.Get("WeatherApplicationUrl"));
             _weatherAppPage = new CheckWeatherApplicationPage(_driver);
         }
         
