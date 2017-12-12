@@ -2,7 +2,6 @@
 using NSubstitute;
 using RestSharp;
 using WeatherServiceRestful.Abstraction;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WeatherServiceRestful.Models;
 using System.Linq;
 using WeatherServiceRestful.Enums;
@@ -53,18 +52,6 @@ namespace WeatherApplicationUnitTests
             weatherService.CallWeatherService("country", "city");
 
             restClient.Received(1).Execute<WeatherService>(Arg.Is<RestRequest>(a => a.Parameters.Any(p => p.Name == "appid" && (string)p.Value == "key")));
-        }
-
-        [Fact]
-        public void CallWeatherServiceShouldRetrunTemperatureAndHumidity()
-        {
-            var restClient = Substitute.For<IRestClient>();
-            var serviceConfiguration = Substitute.For<IWeatherServiceRestConfiguration>();
-            serviceConfiguration.ApiUrl.Returns("http://url");
-
-            var weatherService = new WeatherServiceRestful.WeatherServiceRestful(serviceConfiguration, restClient);
-
-            var result = weatherService.CallWeatherService("country", "city");
         }
     }
 }

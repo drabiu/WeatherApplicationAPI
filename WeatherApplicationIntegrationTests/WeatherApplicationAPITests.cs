@@ -3,7 +3,7 @@ using NSubstitute;
 
 namespace WeatherApplicationIntegrationTests
 {
-    public class UnitTest1
+    public class WeatherApplicationAPITests
     {
         public void TestMethod1()
         {

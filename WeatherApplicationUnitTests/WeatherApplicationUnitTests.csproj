@@ -77,6 +77,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HelpersTests.cs" />
+    <Compile Include="WeatherServiceAdapterTests.cs" />
     <Compile Include="WeatherServiceRestTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
