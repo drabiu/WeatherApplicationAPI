@@ -3,6 +3,7 @@
     public enum Units
     {
         imperial,
-        metric     
+        metric,
+        other
     }
 }
