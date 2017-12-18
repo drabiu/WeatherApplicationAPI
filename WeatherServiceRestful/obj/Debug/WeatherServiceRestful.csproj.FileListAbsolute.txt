@@ -11,3 +11,4 @@ C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherServiceRestful\bin\
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherServiceRestful\obj\Debug\WeatherServiceRestful.csproj.CoreCompileInputs.cache
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherServiceRestful\obj\Debug\WeatherServiceRestful.dll
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherServiceRestful\obj\Debug\WeatherServiceRestful.pdb
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherServiceRestful\obj\Debug\WeatherServiceRestful.csprojResolveAssemblyReference.cache
