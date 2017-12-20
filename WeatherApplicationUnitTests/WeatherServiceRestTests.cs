@@ -5,11 +5,19 @@ using WeatherServiceRestful.Abstraction;
 using WeatherServiceRestful.Models;
 using System.Linq;
 using WeatherServiceRestful.Enums;
+using WeatherServiceRestful;
 
 namespace WeatherApplicationUnitTests
 {
     public class WeatherServiceRestTests
     {
+        public WeatherServiceRestTests()
+        {
+            var restClient = Substitute.For<IRestClient>();
+            var serviceConfiguration = Substitute.For<IWeatherServiceRestConfiguration>();
+            serviceConfiguration.ApiUrl.Returns("http://url");
+        }
+
         [Fact]
         public void CallWeatherServiceShouldCallRestClientExecuteWithCityAndCountryParameter()
         {
@@ -17,7 +25,7 @@ namespace WeatherApplicationUnitTests
             var serviceConfiguration = Substitute.For<IWeatherServiceRestConfiguration>();
             serviceConfiguration.ApiUrl.Returns("http://url");
 
-            var weatherService = new WeatherServiceRestful.WeatherServiceRestful(serviceConfiguration, restClient);
+            var weatherService = new WeatherServiceRest(serviceConfiguration, restClient);
 
             weatherService.CallWeatherService("country", "city");
 
@@ -32,7 +40,7 @@ namespace WeatherApplicationUnitTests
             serviceConfiguration.ApiUrl.Returns("http://url");
             serviceConfiguration.Units.Returns(Units.metric);
 
-            var weatherService = new WeatherServiceRestful.WeatherServiceRestful(serviceConfiguration, restClient);
+            var weatherService = new WeatherServiceRest(serviceConfiguration, restClient);
 
             weatherService.CallWeatherService("country", "city");
 
@@ -47,7 +55,7 @@ namespace WeatherApplicationUnitTests
             serviceConfiguration.ApiUrl.Returns("http://url");
             serviceConfiguration.ApiKey.Returns("key");
 
-            var weatherService = new WeatherServiceRestful.WeatherServiceRestful(serviceConfiguration, restClient);
+            var weatherService = new WeatherServiceRest(serviceConfiguration, restClient);
 
             weatherService.CallWeatherService("country", "city");
 

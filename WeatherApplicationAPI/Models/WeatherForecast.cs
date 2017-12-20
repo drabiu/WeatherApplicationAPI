@@ -2,8 +2,8 @@
 {
     public class WeatherForecast
     {
-        public Location location { get; set; }
-        public Temperature temperature { get; set; }
-        public int humidity { get; set; }
+        public Location Location { get; set; }
+        public Temperature Temperature { get; set; }
+        public int Humidity { get; set; }
     }
 }

@@ -5,7 +5,7 @@ using WeatherServiceRestful.Models;
 
 namespace WeatherServiceRestful
 {
-    public class WeatherServiceRestful
+    public class WeatherServiceRest
     {
         private string _apiKey;
         private string _units;
@@ -13,7 +13,7 @@ namespace WeatherServiceRestful
 
         private IRestClient _restClient;
 
-        public WeatherServiceRestful(IWeatherServiceRestConfiguration config, IRestClient restClient)
+        public WeatherServiceRest(IWeatherServiceRestConfiguration config, IRestClient restClient)
         {
             _apiKey = config.ApiKey;
             _units = config.Units.ToString();

@@ -60,10 +60,6 @@ C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAcceptan
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAcceptanceTests\bin\Debug\WebDriver.Support.dll
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAcceptanceTests\bin\Debug\WebDriver.Support.xml
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAcceptanceTests\bin\Debug\Default.srprofile
-C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAcceptanceTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
-C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAcceptanceTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAcceptanceTests\bin\Debug\SpecRun.SpecFlowPlugin.dll
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAcceptanceTests\bin\Debug\TechTalk.SpecRun.Common.dll
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAcceptanceTests\bin\Debug\TechTalk.SpecRun.dll
-C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAcceptanceTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
-C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAcceptanceTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml

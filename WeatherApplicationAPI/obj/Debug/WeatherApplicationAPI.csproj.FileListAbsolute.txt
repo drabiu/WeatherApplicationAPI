@@ -54,3 +54,6 @@ C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\Weath
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAPI\bin\WeatherServiceRestful.dll
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAPI\bin\RestSharp.dll
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAPI\bin\WeatherServiceRestful.pdb
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAPI\bin\pl\System.Net.Http.Formatting.resources.dll
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAPI\bin\pl\System.Web.Http.resources.dll
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAPI\bin\pl\System.Web.Http.WebHost.resources.dll

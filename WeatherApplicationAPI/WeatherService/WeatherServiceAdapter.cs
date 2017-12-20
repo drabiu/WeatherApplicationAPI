@@ -1,15 +1,16 @@
 ﻿using AutoMapper;
 using WeatherApplicationAPI.Models;
 using WeatherApplicationAPI.WeatherService.Abstraction;
+using WeatherServiceRestful;
 
 namespace WeatherApplicationAPI.WeatherService
 {
     public class WeatherServiceAdapter : IWeatherService
     {
-        WeatherServiceRestful.WeatherServiceRestful _weatherService;
+        WeatherServiceRest _weatherService;
         IMapper _mapper;
 
-        public WeatherServiceAdapter(WeatherServiceRestful.WeatherServiceRestful weatherServiceRest, IMapper mapper)
+        public WeatherServiceAdapter(WeatherServiceRest weatherServiceRest, IMapper mapper)
         {
             _weatherService = weatherServiceRest;
             _mapper = mapper;

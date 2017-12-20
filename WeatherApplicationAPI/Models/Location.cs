@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace WeatherApplicationAPI.Models
+﻿namespace WeatherApplicationAPI.Models
 {
     public class Location
     {
-        public string city { get; set; }
-        public string country { get; set; }
+        public string City { get; set; }
+        public string Country { get; set; }
     }
 }

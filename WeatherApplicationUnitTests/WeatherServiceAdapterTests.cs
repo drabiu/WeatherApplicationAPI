@@ -5,17 +5,26 @@ using WeatherApplicationAPI.WeatherService;
 using AutoMapper;
 using RestSharp;
 using WeatherApplicationAPI.Models;
+using WeatherServiceRestful;
 
 namespace WeatherApplicationUnitTests
 {
     public class WeatherServiceAdapterTests
     {
+        public WeatherServiceAdapterTests()
+        {
+            var config = Substitute.For<WeatherServiceConfiguration>();
+            var restClient = Substitute.For<RestClient>();
+            var weatherService = Substitute.For<WeatherServiceRest>(config, restClient);
+            var mapper = Substitute.For<IMapper>();
+        }
+
         [Fact]
         public void WeatherSerivceAdapterShouldCallWeatherService()
         {
             var config = Substitute.For<WeatherServiceConfiguration>();
             var restClient = Substitute.For<RestClient>();
-            var weatherService = Substitute.For<WeatherServiceRestful.WeatherServiceRestful>(config, restClient);
+            var weatherService = Substitute.For<WeatherServiceRest>(config, restClient);
             var mapper = Substitute.For<IMapper>();
 
             IWeatherService serviceAdapter = new WeatherServiceAdapter(weatherService, mapper);
@@ -33,13 +42,13 @@ namespace WeatherApplicationUnitTests
         {
             var config = Substitute.For<WeatherServiceConfiguration>();
             var restClient = Substitute.For<RestClient>();
-            var weatherService = Substitute.For<WeatherServiceRestful.WeatherServiceRestful>(config, restClient);
-
+            var weatherService = Substitute.For<WeatherServiceRest>(config, restClient);
             var mapper = Substitute.For<IMapper>();
+
             var forecast = new WeatherForecast();
-            forecast.temperature = new Temperature();
-            forecast.temperature.value = 16;
-            forecast.humidity = 88;
+            forecast.Temperature = new Temperature();
+            forecast.Temperature.Value = 16;
+            forecast.Humidity = 88;
             mapper.Map<WeatherForecast>(Arg.Any<WeatherForecast>()).Returns(forecast);
 
             IWeatherService serviceAdapter = new WeatherServiceAdapter(weatherService, mapper);
@@ -49,8 +58,8 @@ namespace WeatherApplicationUnitTests
 
             var result = serviceAdapter.GetCurrentWeatherForecast(city, country);
 
-            Assert.Equal(88, result.humidity);
-            Assert.Equal(16, result.temperature.value);
+            Assert.Equal(88, result.Humidity);
+            Assert.Equal(16, result.Temperature.Value);
         }
     }
 }
