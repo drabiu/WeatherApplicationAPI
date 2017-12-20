@@ -15,12 +15,13 @@ var Observable_1 = require("rxjs/Observable");
 require("rxjs/add/operator/map");
 require("rxjs/add/operator/do");
 require("rxjs/add/operator/catch");
+var global_1 = require("../Shared/global");
 var WeatherService = /** @class */ (function () {
     function WeatherService(_http) {
         this._http = _http;
     }
     WeatherService.prototype.get = function (country, city) {
-        return this._http.get('http://localhost:58693/api/weather/' + country + '/' + city)
+        return this._http.get(global_1.Global.BASE_WEATHER_ENDPOINT + country + '/' + city)
             .map(function (response) { return response.json(); })
             .catch(this.handleError);
     };

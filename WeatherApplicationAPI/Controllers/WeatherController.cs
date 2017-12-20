@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using System.Web.Http;
 using WeatherApplicationAPI.WeatherService.Abstraction;
+using WeatherApplicationAPI.Models;
+using System.Web.Http.Cors;
 
 namespace WeatherApplicationAPI.Controllers
 {
@@ -15,13 +17,18 @@ namespace WeatherApplicationAPI.Controllers
             _mapper = mapper;
         }
 
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         [Route("api/weather/{country}/{city}")]
         [HttpGet]
         public IHttpActionResult GetWeather(string country, string city)
         {
-            var result = _weatherService.GetCurrentWeatherForecast(country, city);
+            WeatherForecast result = _weatherService.GetCurrentWeatherForecast(country, city);
+            if (result == null || !result.Location.IsValid())
+            {
+                return NotFound();
+            }
 
-            return Ok();
+            return Ok(result);
         }
     }
 }

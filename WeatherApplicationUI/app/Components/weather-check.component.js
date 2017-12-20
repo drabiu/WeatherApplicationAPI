@@ -11,18 +11,37 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var weather_service_1 = require("../Service/weather.service");
+var forms_1 = require("@angular/forms");
+var router_1 = require("@angular/router");
 var WeatherCheckComponent = /** @class */ (function () {
-    function WeatherCheckComponent(weatherService) {
+    function WeatherCheckComponent(formBuilder, weatherService, router) {
+        this.formBuilder = formBuilder;
         this.weatherService = weatherService;
-        this.indLoading = false;
+        this.router = router;
+        this.loading = false;
+        this.locationForm = this.formBuilder.group({
+            City: ['', forms_1.Validators.required],
+            Country: ['', forms_1.Validators.required]
+        });
     }
     WeatherCheckComponent.prototype.ngOnInit = function () {
+    };
+    WeatherCheckComponent.prototype.getWeather = function (location) {
+        var _this = this;
+        this.loading = true;
+        this.weatherService.get(location.value.Country, location.value.City).subscribe(function (result) {
+            _this.forecast = result;
+            _this.router.navigate(['/weather']);
+        }, function (error) {
+            _this.msg = 'The weather for ' + location.value.City + 'in' + location.value.Country + ' could not be found';
+            console.log(error);
+        });
     };
     WeatherCheckComponent = __decorate([
         core_1.Component({
             templateUrl: "app/Components/weather-check.component.html"
         }),
-        __metadata("design:paramtypes", [weather_service_1.WeatherService])
+        __metadata("design:paramtypes", [forms_1.FormBuilder, weather_service_1.WeatherService, router_1.Router])
     ], WeatherCheckComponent);
     return WeatherCheckComponent;
 }());

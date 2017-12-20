@@ -14,14 +14,16 @@ var http_1 = require("@angular/http");
 var app_component_1 = require("./app.component");
 var app_routing_1 = require("./app.routing");
 var weather_check_component_1 = require("./components/weather-check.component");
+var weather_result_component_1 = require("./components/weather-result.component");
+var weather_service_1 = require("./Service/weather.service");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, forms_1.ReactiveFormsModule, http_1.HttpModule, app_routing_1.routing],
-            declarations: [app_component_1.AppComponent, weather_check_component_1.WeatherCheckComponent],
-            providers: [{ provide: common_1.APP_BASE_HREF, useValue: '/' }],
+            declarations: [app_component_1.AppComponent, weather_check_component_1.WeatherCheckComponent, weather_result_component_1.WeatherResultComponent],
+            providers: [{ provide: common_1.APP_BASE_HREF, useValue: '/' }, weather_service_1.WeatherService],
             bootstrap: [app_component_1.AppComponent]
         })
     ], AppModule);

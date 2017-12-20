@@ -1,1 +1,18 @@
 ﻿<h1>Check Weather</h1>
+<form novalidate (ngSubmit)="getWeather(locationForm)" [formGroup]="locationForm">
+    <div class="form-group">
+        <div>
+            <span>City*: </span>
+            <input type="text" class="form-control" placeholder="City" formControlName="City">
+        </div>
+        <div>
+            <span>Country*: </span>
+            <input type="text" class="form-control" placeholder="Country" formControlName="Country">
+        </div>
+        <div>
+            <div style="padding-bottom:10px">
+                <button type="submit" [disabled]="locationForm.invalid" class="btn btn-primary">Check</button>
+            </div>
+        </div>
+    </div>
+</form>
