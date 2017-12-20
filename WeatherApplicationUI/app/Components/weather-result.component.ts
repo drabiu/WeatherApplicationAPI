@@ -2,6 +2,7 @@
 import { WeatherService } from '../Service/weather.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { IForecastResult } from '../Models/forecast-result';
+import { Global } from '../Shared/global';
 
 @Component({
     templateUrl: `app/Components/weather-result.component.html`,
@@ -15,8 +16,6 @@ export class WeatherResultComponent implements OnInit {
     }
 
     getTempUnicodeChar() {
-        return "\\00B0";
-        //return "\\006B";
-        //return "\\2109";
+        return Global.CELSIUS_UNICODE_CHAR;
     }
 }
