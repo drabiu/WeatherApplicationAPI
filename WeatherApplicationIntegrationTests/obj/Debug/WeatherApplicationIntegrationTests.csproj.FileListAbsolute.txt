@@ -93,3 +93,6 @@ C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationIntegrat
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationIntegrationTests\bin\Debug\pl\System.Web.Http.resources.dll
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationIntegrationTests\bin\Debug\pl\System.Web.Http.WebHost.resources.dll
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationIntegrationTests\bin\Debug\pl\System.Net.Http.Formatting.resources.dll
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationIntegrationTests\bin\Debug\System.Web.Http.Cors.dll
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationIntegrationTests\bin\Debug\System.Web.Cors.dll
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationIntegrationTests\bin\Debug\System.Web.Http.Cors.xml

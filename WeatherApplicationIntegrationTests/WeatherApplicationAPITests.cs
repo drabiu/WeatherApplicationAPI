@@ -22,8 +22,10 @@ namespace WeatherApplicationIntegrationTests
 
             var result = _weatherService.GetCurrentWeatherForecast("Gdynia", "Poland");
 
-            //Assert.InRange<int>(_weatherAppResultPage.Humidity(), 0, 100);
-            //Assert.InRange<double>(_weatherAppResultPage.Temperature(), -100, 100);
+            Assert.Equal("Gdynia", result.Location.City);
+            Assert.Equal("PL", result.Location.Country);
+            Assert.InRange<int>(result.Humidity, 0, 100);
+            Assert.InRange<int>(result.Temperature.Value, -100, 100);
         }
     }
 }

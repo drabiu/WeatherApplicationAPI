@@ -4,8 +4,19 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { IForecastResult } from '../Models/forecast-result';
 
 @Component({
-    template: `app/Components/weather-result.component.html`
+    templateUrl: `app/Components/weather-result.component.html`,
+    styleUrls: ['app/Components/weather-card.css']
 })
 
-export class WeatherResultComponent {
+export class WeatherResultComponent implements OnInit {
+
+    ngOnInit() {
+
+    }
+
+    getTempUnicodeChar() {
+        return "\\00B0";
+        //return "\\006B";
+        //return "\\2109";
+    }
 }

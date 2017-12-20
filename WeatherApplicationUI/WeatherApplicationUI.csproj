@@ -161,6 +161,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\Components\weather-card.css" />
     <Content Include="app\Components\weather-check.component.html" />
     <Content Include="app\Components\weather-result.component.html" />
     <Content Include="Content\bootstrap.css" />
@@ -198,7 +199,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Weather.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="tsconfig.json" />
   </ItemGroup>

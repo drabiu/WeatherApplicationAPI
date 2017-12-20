@@ -10,9 +10,17 @@ var core_1 = require("@angular/core");
 var WeatherResultComponent = /** @class */ (function () {
     function WeatherResultComponent() {
     }
+    WeatherResultComponent.prototype.ngOnInit = function () {
+    };
+    WeatherResultComponent.prototype.getTempUnicodeChar = function () {
+        return "\\00B0";
+        //return "\\006B";
+        //return "\\2109";
+    };
     WeatherResultComponent = __decorate([
         core_1.Component({
-            template: "app/Components/weather-result.component.html"
+            templateUrl: "app/Components/weather-result.component.html",
+            styleUrls: ['app/Components/weather-card.css']
         })
     ], WeatherResultComponent);
     return WeatherResultComponent;

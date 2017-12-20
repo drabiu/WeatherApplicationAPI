@@ -5,7 +5,8 @@ import { IForecastResult } from '../Models/forecast-result';
 import { Router } from '@angular/router';
 
 @Component({
-    templateUrl: `app/Components/weather-check.component.html`
+    templateUrl: `app/Components/weather-check.component.html`,
+    styleUrls: ['app/Components/weather-card.css']
 })
 
 export class WeatherCheckComponent implements OnInit 

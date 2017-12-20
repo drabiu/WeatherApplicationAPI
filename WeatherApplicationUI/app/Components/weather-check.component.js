@@ -39,7 +39,8 @@ var WeatherCheckComponent = /** @class */ (function () {
     };
     WeatherCheckComponent = __decorate([
         core_1.Component({
-            templateUrl: "app/Components/weather-check.component.html"
+            templateUrl: "app/Components/weather-check.component.html",
+            styleUrls: ['app/Components/weather-card.css']
         }),
         __metadata("design:paramtypes", [forms_1.FormBuilder, weather_service_1.WeatherService, router_1.Router])
     ], WeatherCheckComponent);
