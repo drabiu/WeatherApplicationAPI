@@ -6,7 +6,7 @@ import { WeatherResultComponent } from './components/weather-result.component'
 const appRoutes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', component: WeatherCheckComponent },
-    { path: 'weather', component: WeatherResultComponent }
+    { path: 'weather/:city/:country', component: WeatherResultComponent }    
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

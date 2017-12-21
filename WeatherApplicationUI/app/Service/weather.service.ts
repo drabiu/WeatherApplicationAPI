@@ -8,10 +8,18 @@ import { Global } from '../Shared/global';
 
 @Injectable()
 export class WeatherService {
+
     constructor(private _http: Http) { }
 
+   
     get(country: string, city: string): Observable<any> {
-        return this._http.get(Global.BASE_WEATHER_ENDPOINT + country + '/' + city)
+        let getHeaders = new Headers();
+        //getHeaders.append('Content-Type', 'application/json'); 
+        //getHeaders.append('Access-Control-Allow-Origin', '*');
+
+        let options = new RequestOptions({ headers: getHeaders });
+
+        return this._http.get(Global.BASE_WEATHER_ENDPOINT + country + '/' + city, options)
             .map((response: Response) => <any>response.json())
             // .do(data => console.log("All: " + JSON.stringify(data)))
             .catch(this.handleError);

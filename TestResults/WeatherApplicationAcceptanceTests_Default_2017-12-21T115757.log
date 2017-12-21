@@ -1,0 +1,89 @@
+﻿2017-12-21T11:57:56.9129842+01:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2017-12-21T11:57:57.0642908+01:00;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2017-12-21T11:57:57.0653008+01:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAcceptanceTests\bin\Debug\WeatherApplicationAcceptanceTests.dll
+2017-12-21T11:57:57.0663158+01:00;VSTestExecutionThread;Info;Profile: Default
+2017-12-21T11:58:04.1320353+01:00;Thread#16;Info;Discovering target: Default
+2017-12-21T11:58:04.1330151+01:00;Thread#16;Info;Discovering tests from assembly: C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAcceptanceTests\bin\Debug\WeatherApplicationAcceptanceTests.dll
+Appdomain Disposed
+Test Suite Dump
+#0: WeatherApplicationAcceptanceTests/Default - 
+#1: Default - 
+#2: WeatherApplicationAcceptanceTests - 
+#3: Local weather in given city - 
+#5: Check weather for Gdansk - TestAssembly:WeatherApplicationAcceptanceTests/Feature:Local+weather+in+given+city/Scenario:Check+weather+for+Gdansk
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #5 from normal test queue 
+Thread#0:Scheduler: considering testitem #5 for thread 0
+Thread#0:TestItem#5:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#5:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#5:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #5 for thread 0
+Thread#0:Scheduler: Test #5 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for WeatherApplicationAcceptanceTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\mdrab\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.6.3\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #5/0 is started on thread #0
+Thread#0:T:-> Using app.config
+Thread#0:B:Given a webpage with a form
+Thread#0:T:done: LocalWeatherInGivenCitySteps.GivenAWebpageWithAForm() (2,1s)
+Thread#0:B:And I type in "Poland" and "Gdańsk"
+Thread#0:T:error: Dla metody niestatycznej wymagany jest obiekt docelowy.
+Thread#0:B:When I submit the form
+Thread#0:T:skipped because of previous errors
+Thread#0:B:Then I receive the temperature and humidity conditions on the day for Gdansk, Poland according to the official weather reports
+Thread#0:T:skipped because of previous errors
+Thread#0:TestItem#5:Scheduler: reschedule tests for testitem #5
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: dequeuing a rescheduled testitem: #5
+Thread#0:Scheduler: considering testitem #5 for thread 0
+Thread#0:TestItem#5:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#5:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#5:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #5 for thread 0
+Thread#0:Scheduler: Test #5 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 1
+Thread#0: Test #5/0 is finished on thread #0 as Failed within 9,288115 seconds
+Thread#0: Test #5/1 is started on thread #0
+Thread#0:B:Given a webpage with a form
+Thread#0:T:done: LocalWeatherInGivenCitySteps.GivenAWebpageWithAForm() (2,1s)
+Thread#0:B:And I type in "Poland" and "Gdańsk"
+Thread#0:T:error: Could not find element by: By.Id: country
+Thread#0:B:When I submit the form
+Thread#0:T:skipped because of previous errors
+Thread#0:B:Then I receive the temperature and humidity conditions on the day for Gdansk, Poland according to the official weather reports
+Thread#0:T:skipped because of previous errors
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: dequeuing a rescheduled testitem: #5
+Thread#0:Scheduler: considering testitem #5 for thread 0
+Thread#0:TestItem#5:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#5:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#5:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #5 for thread 0
+Thread#0:Scheduler: Test #5 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 2
+Thread#0: Test #5/1 is finished on thread #0 as Failed within 11,7949869 seconds
+Thread#0: Test #5/2 is started on thread #0
+Thread#0:B:Given a webpage with a form
+Thread#0:T:done: LocalWeatherInGivenCitySteps.GivenAWebpageWithAForm() (2,8s)
+Thread#0:B:And I type in "Poland" and "Gdańsk"
+Thread#0:T:error: Could not find element by: By.Id: country
+Thread#0:B:When I submit the form
+Thread#0:T:skipped because of previous errors
+Thread#0:B:Then I receive the temperature and humidity conditions on the day for Gdansk, Poland according to the official weather reports
+Thread#0:T:skipped because of previous errors
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread
+Thread#0: Test #5/2 is finished on thread #0 as Failed within 10,3448477 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread -1
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 1 (test executions: 3)
+Succeeded: 0
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 1

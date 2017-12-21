@@ -16,12 +16,16 @@ require("rxjs/add/operator/map");
 require("rxjs/add/operator/do");
 require("rxjs/add/operator/catch");
 var global_1 = require("../Shared/global");
-var WeatherService = /** @class */ (function () {
+var WeatherService = (function () {
     function WeatherService(_http) {
         this._http = _http;
     }
     WeatherService.prototype.get = function (country, city) {
-        return this._http.get(global_1.Global.BASE_WEATHER_ENDPOINT + country + '/' + city)
+        var getHeaders = new http_1.Headers();
+        //getHeaders.append('Content-Type', 'application/json'); 
+        //getHeaders.append('Access-Control-Allow-Origin', '*');
+        var options = new http_1.RequestOptions({ headers: getHeaders });
+        return this._http.get(global_1.Global.BASE_WEATHER_ENDPOINT + country + '/' + city, options)
             .map(function (response) { return response.json(); })
             .catch(this.handleError);
     };
@@ -29,11 +33,11 @@ var WeatherService = /** @class */ (function () {
         console.error(error);
         return Observable_1.Observable.throw(error.json().error || 'Server error');
     };
-    WeatherService = __decorate([
-        core_1.Injectable(),
-        __metadata("design:paramtypes", [http_1.Http])
-    ], WeatherService);
     return WeatherService;
 }());
+WeatherService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http])
+], WeatherService);
 exports.WeatherService = WeatherService;
 //# sourceMappingURL=weather.service.js.map

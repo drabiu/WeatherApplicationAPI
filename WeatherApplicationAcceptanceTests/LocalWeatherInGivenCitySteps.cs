@@ -4,6 +4,7 @@ using OpenQA.Selenium;
 using WeatherApplicationAcceptanceTests.Pages;
 using OpenQA.Selenium.Chrome;
 using System.Configuration;
+using System;
 
 namespace WeatherApplicationAcceptanceTests
 {
@@ -30,6 +31,7 @@ namespace WeatherApplicationAcceptanceTests
         public void GivenAWebpageWithAForm()
         {
             _driver.Navigate().GoToUrl(ConfigurationManager.AppSettings.Get("WeatherApplicationUrl"));
+            _driver.Manage().Timeouts().ImplicitWait = new TimeSpan(0, 0, 5);
             _weatherAppPage = new CheckWeatherApplicationPage(_driver);
         }
         
@@ -49,7 +51,7 @@ namespace WeatherApplicationAcceptanceTests
         public void ThenIReceiveTheTemperatureAndHumidityConditionsOnTheDayForWarsawPolandAccordingToTheOfficialWeatherReports()
         {
             Assert.Equal("Warsaw", _weatherAppResultPage.City());
-            Assert.Equal("Poland", _weatherAppResultPage.Country());
+            Assert.Equal("PL", _weatherAppResultPage.Country());
             Assert.InRange<int>(_weatherAppResultPage.Humidity(), 0, 100);
             Assert.InRange<double>(_weatherAppResultPage.Temperature(), -100, 100);
         }
@@ -58,7 +60,7 @@ namespace WeatherApplicationAcceptanceTests
         public void ThenIReceiveTheTemperatureAndHumidityConditionsOnTheDayForGdanskPolandAccordingToTheOfficialWeatherReports()
         {
             Assert.Equal("Gdańsk", _weatherAppResultPage.City());
-            Assert.Equal("Poland", _weatherAppResultPage.Country());
+            Assert.Equal("PL", _weatherAppResultPage.Country());
             Assert.InRange<int>(_weatherAppResultPage.Humidity(), 0, 100);
             Assert.InRange<double>(_weatherAppResultPage.Temperature(), -100, 100);
         }
@@ -67,7 +69,7 @@ namespace WeatherApplicationAcceptanceTests
         public void ThenIReceiveTheTemperatureAndHumidityConditionsOnTheDayForBerlinGermanyAccordingToTheOfficialWeatherReports()
         {
             Assert.Equal("Berlin", _weatherAppResultPage.City());
-            Assert.Equal("Germany", _weatherAppResultPage.Country());
+            Assert.Equal("DE", _weatherAppResultPage.Country());
             Assert.InRange<int>(_weatherAppResultPage.Humidity(), 0, 100);
             Assert.InRange<double>(_weatherAppResultPage.Temperature(), -100, 100);
         }

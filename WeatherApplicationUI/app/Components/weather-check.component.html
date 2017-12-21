@@ -3,15 +3,15 @@
         <h1 class="card-header" id="">Check Weather</h1>
         <div class="form-group">
             <div>
-                <input type="text" class="form-control" placeholder="City" formControlName="City">
+                <input type="text" id="city" class="form-control" placeholder="City" formControlName="City">
             </div>
             <div>
-                <input type="text" class="form-control" placeholder="Country" formControlName="Country">
+                <input type="text" id="country" class="form-control" placeholder="Country" formControlName="Country">
             </div>
             <div>
                 <span></span>
                 <div style="padding-bottom:10px">
-                    <button type="submit" [disabled]="locationForm.invalid" class="btn btn-primary">Check</button>
+                    <button type="submit" id="submit" [disabled]="locationForm.invalid" class="btn btn-primary">Check</button>
                 </div>
             </div>
         </div>

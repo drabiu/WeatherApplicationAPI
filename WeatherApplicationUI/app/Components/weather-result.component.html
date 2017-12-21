@@ -2,11 +2,11 @@
     <div class="card-wrapper">
         <section class="card anim-flip">
             <header>
-                <h1 class="card-header" id="">{{Country}}</h1>
-                <h1 class="card-header" id="">{{City}}</h1>
+                <h1 class="card-header" id="country">{{forecast?.Location?.Country}}</h1>
+                <h1 class="card-header" id="city">{{forecast?.Location?.City}}</h1>
             </header>
-            <p class="card-temp box-highlight" ng-style="{ .card-temp::after : { 'content': getTempUnicodeChar() } }" id="">{{Temperature}}</p>
-            <p class="card-info">Humidity</p><p id="">{{Humidity}}</p>
+            <p class="card-temp box-highlight" id="temperature">{{forecast?.Temperature?.Value}}</p>
+            <p class="card-info">Humidity</p><p id="humidity">{{forecast?.Humidity}}</p>
         </section>
     </div>
 </main>

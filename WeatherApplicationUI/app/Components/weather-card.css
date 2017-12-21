@@ -54,6 +54,11 @@ body{
     transform: rotateY(180deg);
     backface-visibility: hidden;
 }
+
+.card-temp::after {
+    content: "\00B0";
+}
+
 .card:hover{
     box-shadow: 0 0 20px 10px rgb(5,15,25);
     z-index: 2;

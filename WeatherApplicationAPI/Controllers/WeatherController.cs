@@ -6,6 +6,7 @@ using System.Web.Http.Cors;
 
 namespace WeatherApplicationAPI.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class WeatherController : ApiController
     {
         private IWeatherService _weatherService;
@@ -22,7 +23,7 @@ namespace WeatherApplicationAPI.Controllers
         [HttpGet]
         public IHttpActionResult GetWeather(string country, string city)
         {
-            WeatherForecast result = _weatherService.GetCurrentWeatherForecast(country, city);
+            WeatherForecast result = _weatherService.GetCurrentWeatherForecast(city, country);
             if (result == null || !result.Location.IsValid())
             {
                 return NotFound();

@@ -35,8 +35,6 @@ C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\Weath
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\WeatherApplicationUnitTests.dll
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\WeatherApplicationUnitTests.pdb
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\Castle.Core.dll
-C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
-C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\NSubstitute.dll
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\RestSharp.dll
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\System.Threading.Tasks.Extensions.dll
@@ -55,8 +53,6 @@ C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\Weath
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\WeatherApplicationAPI.pdb
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\WeatherApplicationAPI.dll.config
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\WeatherServiceRestful.pdb
-C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
-C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\xunit.assert.xml
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\xunit.core.xml
@@ -97,3 +93,10 @@ C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTest
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\pl\System.Web.Http.resources.dll
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\pl\System.Web.Http.WebHost.resources.dll
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\pl\System.Net.Http.Formatting.resources.dll
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\System.Web.Http.Cors.dll
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\System.Web.Cors.dll
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\System.Web.Http.Cors.xml
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\pl\System.Web.Http.resources.dll
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\pl\System.Web.Http.WebHost.resources.dll
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\pl\System.Net.Http.Formatting.resources.dll
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationUnitTests\obj\Debug\WeatherApplicationUnitTests.csproj.WeatherApplicationUnitTests.dll.config

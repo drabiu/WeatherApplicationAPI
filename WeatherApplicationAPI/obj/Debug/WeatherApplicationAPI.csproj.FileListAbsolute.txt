@@ -60,3 +60,9 @@ C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAPI\bin\
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAPI\bin\System.Web.Cors.dll
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAPI\bin\System.Web.Http.Cors.dll
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAPI\bin\System.Web.Http.Cors.xml
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\System.Web.Cors.dll
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\System.Web.Http.Cors.dll
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\System.Web.Http.Cors.xml
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\pl\System.Net.Http.Formatting.resources.dll
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\pl\System.Web.Http.resources.dll
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\pl\System.Web.Http.WebHost.resources.dll

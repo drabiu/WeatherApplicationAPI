@@ -1,0 +1,74 @@
+﻿2017-12-21T14:36:48.6227378+01:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2017-12-21T14:36:48.7247470+01:00;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2017-12-21T14:36:48.7257544+01:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAcceptanceTests\bin\Debug\WeatherApplicationAcceptanceTests.dll
+2017-12-21T14:36:48.7267452+01:00;VSTestExecutionThread;Info;Profile: Default
+2017-12-21T14:36:58.8130550+01:00;VSTestExecutionThread;Info;Discovering target: Default
+2017-12-21T14:36:58.8140563+01:00;VSTestExecutionThread;Info;Discovering tests from assembly: C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAcceptanceTests\bin\Debug\WeatherApplicationAcceptanceTests.dll
+2017-12-21T14:37:12.1293719+01:00;VSTestExecutionThread;Info;Log file: file:///C:\Users\mdrab\Documents\Visual%20Studio%202017\Projects\WeatherApplicationAPI\TestResults\WeatherApplicationAcceptanceTests_Default_2017-12-21T143648.log
+2017-12-21T14:37:12.1313700+01:00;VSTestExecutionThread;Info;SpecFlow+Runner execution finished
+2017-12-21T14:39:28.5576458+01:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2017-12-21T14:39:28.5901532+01:00;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2017-12-21T14:39:28.5911557+01:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAcceptanceTests\bin\Debug\WeatherApplicationAcceptanceTests.dll
+2017-12-21T14:39:28.5911557+01:00;VSTestExecutionThread;Info;Profile: Default
+2017-12-21T14:39:42.5953257+01:00;VSTestExecutionThread;Info;Discovering target: Default
+2017-12-21T14:39:42.5963256+01:00;VSTestExecutionThread;Info;Discovering tests from assembly: C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAcceptanceTests\bin\Debug\WeatherApplicationAcceptanceTests.dll
+2017-12-21T14:40:10.6990738+01:00;VSTestExecutionThread;Info;Log file: file:///C:\Users\mdrab\Documents\Visual%20Studio%202017\Projects\WeatherApplicationAPI\TestResults\WeatherApplicationAcceptanceTests_Default_2017-12-21T143928.log
+2017-12-21T14:40:10.7000743+01:00;VSTestExecutionThread;Info;SpecFlow+Runner execution finished
+2017-12-21T14:40:42.2777466+01:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2017-12-21T14:40:42.3017491+01:00;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2017-12-21T14:40:42.3027481+01:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAcceptanceTests\bin\Debug\WeatherApplicationAcceptanceTests.dll
+2017-12-21T14:40:42.3027481+01:00;VSTestExecutionThread;Info;Profile: Default
+2017-12-21T14:40:55.3089016+01:00;VSTestExecutionThread;Info;Discovering target: Default
+2017-12-21T14:40:55.3107570+01:00;VSTestExecutionThread;Info;Discovering tests from assembly: C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAcceptanceTests\bin\Debug\WeatherApplicationAcceptanceTests.dll
+2017-12-21T14:41:05.6586363+01:00;VSTestExecutionThread;Info;Log file: file:///C:\Users\mdrab\Documents\Visual%20Studio%202017\Projects\WeatherApplicationAPI\TestResults\WeatherApplicationAcceptanceTests_Default_2017-12-21T144042.log
+2017-12-21T14:41:05.6596373+01:00;VSTestExecutionThread;Info;SpecFlow+Runner execution finished
+2017-12-21T14:41:25.3008433+01:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2017-12-21T14:41:25.3268484+01:00;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2017-12-21T14:41:25.3283497+01:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAcceptanceTests\bin\Debug\WeatherApplicationAcceptanceTests.dll
+2017-12-21T14:41:25.3288496+01:00;VSTestExecutionThread;Info;Profile: Default
+2017-12-21T14:41:32.3334157+01:00;Thread#25;Info;Discovering target: Default
+2017-12-21T14:41:32.3344212+01:00;Thread#25;Info;Discovering tests from assembly: C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAcceptanceTests\bin\Debug\WeatherApplicationAcceptanceTests.dll
+Appdomain Disposed
+Test Suite Dump
+#0: WeatherApplicationAcceptanceTests/Default - 
+#1: Default - 
+#2: WeatherApplicationAcceptanceTests - 
+#3: Local weather in given city - 
+#4: Check weather for Warsaw - TestAssembly:WeatherApplicationAcceptanceTests/Feature:Local+weather+in+given+city/Scenario:Check+weather+for+Warsaw
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #4 from normal test queue 
+Thread#0:Scheduler: considering testitem #4 for thread 0
+Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #4 for thread 0
+Thread#0:Scheduler: Test #4 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for WeatherApplicationAcceptanceTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\mdrab\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.6.3\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #4/0 is started on thread #0
+Thread#0:T:-> Using app.config
+Thread#0:B:Given a webpage with a form
+Thread#0:T:done: LocalWeatherInGivenCitySteps.GivenAWebpageWithAForm() (0,5s)
+Thread#0:B:And I type in "Poland" and "Warsaw"
+Thread#0:T:done: LocalWeatherInGivenCitySteps.GivenITypeIn("Poland", "Warsaw") (0,7s)
+Thread#0:B:When I submit the form
+Thread#0:T:done: LocalWeatherInGivenCitySteps.WhenISubmitTheForm() (5,1s)
+Thread#0:B:Then I receive the temperature and humidity conditions on the day for Warsaw, Poland according to the official weather reports
+Thread#0:T:done: LocalWeatherInGivenCitySteps.ThenIReceiveTheTemperatureAndHumidityConditionsOnTheDayForWarsawPolandAccordingToTheOfficialWeatherReports() (0,2s)
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread
+Thread#0: Test #4/0 is finished on thread #0 as Succeeded within 9,3479755 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread -1
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 1
+Succeeded: 1
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 0

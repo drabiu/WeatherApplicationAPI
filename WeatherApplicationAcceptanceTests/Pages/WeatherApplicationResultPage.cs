@@ -6,19 +6,16 @@ namespace WeatherApplicationAcceptanceTests.Pages
 {
     public class WeatherApplicationResultPage : PageObject
     {
-        [FindsBy(How = How.Name, Using = "temp")]
+        [FindsBy(How = How.Id, Using = "temperature")]
         private IWebElement _temperature;
 
-        [FindsBy(How = How.Name, Using = "humidity")]
+        [FindsBy(How = How.Id, Using = "humidity")]
         private IWebElement _humidity;
 
-        [FindsBy(How = How.Name, Using = "format")]
-        private IWebElement _format;
-
-        [FindsBy(How = How.Name, Using = "city")]
+        [FindsBy(How = How.Id, Using = "city")]
         private IWebElement _city;
 
-        [FindsBy(How = How.Name, Using = "country")]
+        [FindsBy(How = How.Id, Using = "country")]
         private IWebElement _country;
 
         public WeatherApplicationResultPage(IWebDriver driver) : base(driver)
