@@ -11,55 +11,48 @@ namespace WeatherApplicationUnitTests
 {
     public class WeatherServiceRestTests
     {
+        private readonly IRestClient _restClient;
+        private readonly IWeatherServiceRestConfiguration _serviceConfiguration;
+
         public WeatherServiceRestTests()
         {
-            var restClient = Substitute.For<IRestClient>();
-            var serviceConfiguration = Substitute.For<IWeatherServiceRestConfiguration>();
-            serviceConfiguration.ApiUrl.Returns("http://url");
+            _restClient = Substitute.For<IRestClient>();
+            _serviceConfiguration = Substitute.For<IWeatherServiceRestConfiguration>();
+            _serviceConfiguration.ApiUrl.Returns("http://url");
         }
 
         [Fact]
         public void CallWeatherServiceShouldCallRestClientExecuteWithCityAndCountryParameter()
         {
-            var restClient = Substitute.For<IRestClient>();
-            var serviceConfiguration = Substitute.For<IWeatherServiceRestConfiguration>();
-            serviceConfiguration.ApiUrl.Returns("http://url");
-
-            var weatherService = new WeatherServiceRest(serviceConfiguration, restClient);
+            var weatherService = new WeatherServiceRest(_serviceConfiguration, _restClient);
 
             weatherService.CallWeatherService("country", "city");
 
-            restClient.Received(1).Execute<WeatherService>(Arg.Is<RestRequest>(a => a.Parameters.Any(p => p.Name == "q" && (string)p.Value == "city, country")));
+            _restClient.Received(1).Execute<WeatherService>(Arg.Is<RestRequest>(a => a.Parameters.Any(p => p.Name == "q" && (string)p.Value == "city, country")));
         }
 
         [Fact]
         public void CallWeatherServiceShouldCallRestClientExecuteWithUnitsParameter()
         {
-            var restClient = Substitute.For<IRestClient>();
-            var serviceConfiguration = Substitute.For<IWeatherServiceRestConfiguration>();
-            serviceConfiguration.ApiUrl.Returns("http://url");
-            serviceConfiguration.Units.Returns(Units.metric);
+            _serviceConfiguration.Units.Returns(Units.Metric);
 
-            var weatherService = new WeatherServiceRest(serviceConfiguration, restClient);
+            var weatherService = new WeatherServiceRest(_serviceConfiguration, _restClient);
 
             weatherService.CallWeatherService("country", "city");
 
-            restClient.Received(1).Execute<WeatherService>(Arg.Is<RestRequest>(a => a.Parameters.Any(p => p.Name == "units" && (string)p.Value == "metric")));
+            _restClient.Received(1).Execute<WeatherService>(Arg.Is<RestRequest>(a => a.Parameters.Any(p => p.Name == "units" && (string)p.Value == "Metric")));
         }
 
         [Fact]
         public void CallWeatherServiceShouldCallRestClientExecuteWithApiKeyParameter()
         {
-            var restClient = Substitute.For<IRestClient>();
-            var serviceConfiguration = Substitute.For<IWeatherServiceRestConfiguration>();
-            serviceConfiguration.ApiUrl.Returns("http://url");
-            serviceConfiguration.ApiKey.Returns("key");
+            _serviceConfiguration.ApiKey.Returns("key");
 
-            var weatherService = new WeatherServiceRest(serviceConfiguration, restClient);
+            var weatherService = new WeatherServiceRest(_serviceConfiguration, _restClient);
 
             weatherService.CallWeatherService("country", "city");
 
-            restClient.Received(1).Execute<WeatherService>(Arg.Is<RestRequest>(a => a.Parameters.Any(p => p.Name == "appid" && (string)p.Value == "key")));
+            _restClient.Received(1).Execute<WeatherService>(Arg.Is<RestRequest>(a => a.Parameters.Any(p => p.Name == "appid" && (string)p.Value == "key")));
         }
     }
 }

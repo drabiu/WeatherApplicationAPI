@@ -7,8 +7,8 @@ namespace WeatherApplicationAPI.WeatherService
 {
     public class WeatherServiceAdapter : IWeatherService
     {
-        WeatherServiceRest _weatherService;
-        IMapper _mapper;
+        private readonly WeatherServiceRest _weatherService;
+        private readonly IMapper _mapper;
 
         public WeatherServiceAdapter(WeatherServiceRest weatherServiceRest, IMapper mapper)
         {

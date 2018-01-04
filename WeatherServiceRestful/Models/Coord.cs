@@ -1,8 +1,12 @@
-﻿namespace WeatherServiceRestful.Models
+﻿using Newtonsoft.Json;
+
+namespace WeatherServiceRestful.Models
 {
     public class Coord
     {
-        public double lon { get; set; }
-        public double lat { get; set; }
+        [JsonProperty("city")]
+        public double Lon { get; set; }
+        [JsonProperty("city")]
+        public double Lat { get; set; }
     }
 }

@@ -1,7 +1,10 @@
-﻿namespace WeatherServiceRestful.Models
+﻿using Newtonsoft.Json;
+
+namespace WeatherServiceRestful.Models
 {
     public class Clouds
     {
-        public int all { get; set; }
+        [JsonProperty("all")]
+        public int All { get; set; }
     }
 }

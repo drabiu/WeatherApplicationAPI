@@ -1,21 +1,18 @@
-﻿using AutoMapper;
-using System.Web.Http;
-using WeatherApplicationAPI.WeatherService.Abstraction;
-using WeatherApplicationAPI.Models;
+﻿using System.Web.Http;
 using System.Web.Http.Cors;
+using WeatherApplicationAPI.Models;
+using WeatherApplicationAPI.WeatherService.Abstraction;
 
 namespace WeatherApplicationAPI.Controllers
 {
     [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class WeatherController : ApiController
     {
-        private IWeatherService _weatherService;
-        private IMapper _mapper;
+        private readonly IWeatherService _weatherService;
 
-        public WeatherController(IWeatherService service, IMapper mapper)
+        public WeatherController(IWeatherService service)
         {
             _weatherService = service;
-            _mapper = mapper;
         }
 
         [EnableCors(origins: "*", headers: "*", methods: "*")]

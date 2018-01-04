@@ -10,7 +10,7 @@ namespace WeatherApplicationUnitTests
         [Fact]
         public void UnitsConverterShouldReturnFahrenheit()
         {
-            var unit = UnitsConverter.ConvertUnitsToTemperature(Units.imperial);
+            var unit = UnitsConverter.ConvertUnitsToTemperature(Units.Imperial);
 
             Assert.Equal(TempUnits.Fahrenheit, unit);
         }
@@ -18,7 +18,7 @@ namespace WeatherApplicationUnitTests
         [Fact]
         public void UnitsConverterShouldReturnCelsius()
         {
-            var unit = UnitsConverter.ConvertUnitsToTemperature(Units.metric);
+            var unit = UnitsConverter.ConvertUnitsToTemperature(Units.Metric);
 
             Assert.Equal(TempUnits.Celsius, unit);
         }
@@ -26,7 +26,7 @@ namespace WeatherApplicationUnitTests
         [Fact]
         public void UnitsConverterShouldReturnKelvin()
         {
-            var unit = UnitsConverter.ConvertUnitsToTemperature(Units.other);
+            var unit = UnitsConverter.ConvertUnitsToTemperature(Units.Other);
 
             Assert.Equal(TempUnits.Kelvin, unit);
         }

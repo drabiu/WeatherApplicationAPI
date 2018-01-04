@@ -1,12 +1,20 @@
-﻿namespace WeatherServiceRestful.Models
+﻿using Newtonsoft.Json;
+
+namespace WeatherServiceRestful.Models
 {
     public class Sys
     {
-        public int type { get; set; }
-        public int id { get; set; }
-        public double message { get; set; }
-        public string country { get; set; }
-        public int sunrise { get; set; }
-        public int sunset { get; set; }
+        [JsonProperty("type")]
+        public int Type { get; set; }
+        [JsonProperty("id")]
+        public int Id { get; set; }
+        [JsonProperty("message")]
+        public double Message { get; set; }
+        [JsonProperty("country")]
+        public string Country { get; set; }
+        [JsonProperty("sunrise")]
+        public int Sunrise { get; set; }
+        [JsonProperty("sunset")]
+        public int Sunset { get; set; }
     }
 }

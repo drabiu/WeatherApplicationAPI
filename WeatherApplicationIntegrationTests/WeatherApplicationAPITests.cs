@@ -5,27 +5,31 @@ using Autofac;
 using Xunit;
 using AutoMapper;
 using WeatherServiceRestful;
+using Microsoft.Owin.Testing;
+using WeatherApplicationAPI;
+using Newtonsoft.Json;
+using WeatherApplicationAPI.Models;
 
 namespace WeatherApplicationIntegrationTests
 {
     public class WeatherApplicationAPITests
     {
-        [Fact]
-        public void WeatherAdapterShouldReturnWeatherForGivenCity()
+        [Theory]
+        [InlineData("Poland", "Warsaw")]
+        [InlineData("Germany", "Berlin")]
+        [InlineData("Russia", "Moscow")]
+        public async void WeatherAdapterShouldReturnWeatherForGivenCity(string country, string city)
         {
-            DIContainer container = new DIContainer();
-            var autofac = container.Create();
-            var weatherServiceRest = autofac.Resolve<WeatherServiceRest>();
-            var mapper = autofac.Resolve<IMapper>();
+            using (var server = TestServer.Create<Startup>())
+            {
+                var result = await server.HttpClient.GetAsync($"api/weather/{country}/{city}");
+                string responseContent = await result.Content.ReadAsStringAsync();
+                var responseModel = JsonConvert.DeserializeObject<WeatherForecast>(responseContent);
 
-            IWeatherService _weatherService = new WeatherServiceAdapter(weatherServiceRest, mapper);
-
-            var result = _weatherService.GetCurrentWeatherForecast("Gdynia", "Poland");
-
-            Assert.Equal("Gdynia", result.Location.City);
-            Assert.Equal("PL", result.Location.Country);
-            Assert.InRange<int>(result.Humidity, 0, 100);
-            Assert.InRange<int>(result.Temperature.Value, -100, 100);
+                Assert.Equal(city, responseModel.Location.City);
+                Assert.InRange<int>(responseModel.Humidity, 0, 100);
+                Assert.InRange<int>(responseModel.Temperature.Value, -90, 60);
+            }
         }
     }
 }

@@ -1,11 +1,18 @@
-﻿namespace WeatherServiceRestful.Models
+﻿using Newtonsoft.Json;
+
+namespace WeatherServiceRestful.Models
 {
     public class Main
     {
-        public double temp { get; set; }
-        public int pressure { get; set; }
-        public int humidity { get; set; }
-        public double temp_min { get; set; }
-        public double temp_max { get; set; }
+        [JsonProperty("temp")]
+        public double Temp { get; set; }
+        [JsonProperty("pressure")]
+        public int Pressure { get; set; }
+        [JsonProperty("humidity")]
+        public int Humidity { get; set; }
+        [JsonProperty("temp_min")]
+        public double TempMin { get; set; }
+        [JsonProperty("temp_max")]
+        public double TempMax { get; set; }
     }
 }

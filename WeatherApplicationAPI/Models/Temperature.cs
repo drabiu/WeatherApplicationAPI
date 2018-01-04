@@ -1,4 +1,6 @@
-﻿namespace WeatherApplicationAPI.Models
+﻿using Newtonsoft.Json;
+
+namespace WeatherApplicationAPI.Models
 {
     public class Temperature
     {

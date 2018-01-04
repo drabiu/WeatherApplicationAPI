@@ -53,7 +53,7 @@ namespace WeatherApplicationAcceptanceTests
             Assert.Equal("Warsaw", _weatherAppResultPage.City());
             Assert.Equal("PL", _weatherAppResultPage.Country());
             Assert.InRange<int>(_weatherAppResultPage.Humidity(), 0, 100);
-            Assert.InRange<double>(_weatherAppResultPage.Temperature(), -100, 100);
+            Assert.InRange<double>(_weatherAppResultPage.Temperature(), -90, 60);
         }
         
         [Then(@"I receive the temperature and humidity conditions on the day for Gdansk, Poland according to the official weather reports")]
@@ -62,7 +62,7 @@ namespace WeatherApplicationAcceptanceTests
             Assert.Equal("Gdańsk", _weatherAppResultPage.City());
             Assert.Equal("PL", _weatherAppResultPage.Country());
             Assert.InRange<int>(_weatherAppResultPage.Humidity(), 0, 100);
-            Assert.InRange<double>(_weatherAppResultPage.Temperature(), -100, 100);
+            Assert.InRange<double>(_weatherAppResultPage.Temperature(), -90, 60);
         }
         
         [Then(@"I receive the temperature and humidity conditions on the day for Berlin, Germany according to the official weather reports")]
@@ -71,7 +71,7 @@ namespace WeatherApplicationAcceptanceTests
             Assert.Equal("Berlin", _weatherAppResultPage.City());
             Assert.Equal("DE", _weatherAppResultPage.Country());
             Assert.InRange<int>(_weatherAppResultPage.Humidity(), 0, 100);
-            Assert.InRange<double>(_weatherAppResultPage.Temperature(), -100, 100);
+            Assert.InRange<double>(_weatherAppResultPage.Temperature(), -90, 60);
         }
     }
 }

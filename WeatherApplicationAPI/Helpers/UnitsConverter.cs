@@ -9,9 +9,9 @@ namespace WeatherApplicationAPI.Helpers
         {
             switch(units)
             {
-                case Units.imperial:
+                case Units.Imperial:
                     return TempUnits.Fahrenheit;
-                case Units.metric:
+                case Units.Metric:
                     return TempUnits.Celsius;
                 default:
                     return TempUnits.Kelvin;                 

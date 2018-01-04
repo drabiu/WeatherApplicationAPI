@@ -2,8 +2,8 @@
 {
     public enum Units
     {
-        imperial,
-        metric,
-        other
+        Imperial,
+        Metric,
+        Other
     }
 }

@@ -1,8 +1,12 @@
-﻿namespace WeatherServiceRestful.Models
+﻿using Newtonsoft.Json;
+
+namespace WeatherServiceRestful.Models
 {
     public class Wind
     {
-        public double speed { get; set; }
-        public int deg { get; set; }
+        [JsonProperty("speed")]
+        public double Speed { get; set; }
+        [JsonProperty("deg")]
+        public int Deg { get; set; }
     }
 }

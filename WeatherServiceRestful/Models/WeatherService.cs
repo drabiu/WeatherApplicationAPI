@@ -1,20 +1,33 @@
-﻿using System.Collections.Generic;
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace WeatherServiceRestful.Models
 {
     public class WeatherService
     {
-        public Coord coord { get; set; }
-        public List<Weather> weather { get; set; }
-        public string @base { get; set; }
-        public Main main { get; set; }
-        public int visibility { get; set; }
-        public Wind wind { get; set; }
-        public Clouds clouds { get; set; }
-        public int dt { get; set; }
-        public Sys sys { get; set; }
-        public int id { get; set; }
-        public string name { get; set; }
-        public int cod { get; set; }
+        [JsonProperty("coord")]
+        public Coord Coord { get; set; }
+        [JsonProperty("weather")]
+        public List<Weather> Weather { get; set; }
+        [JsonProperty("base")]
+        public string Base { get; set; }
+        [JsonProperty("main")]
+        public Main Main { get; set; }
+        [JsonProperty("visibility")]
+        public int Visibility { get; set; }
+        [JsonProperty("wind")]
+        public Wind Wind { get; set; }
+        [JsonProperty("clouds")]
+        public Clouds Clouds { get; set; }
+        [JsonProperty("dt")]
+        public int Dt { get; set; }
+        [JsonProperty("sys")]
+        public Sys Sys { get; set; }
+        [JsonProperty("id")]
+        public int Id { get; set; }
+        [JsonProperty("name")]
+        public string Name { get; set; }
+        [JsonProperty("cod")]
+        public int Cod { get; set; }
     }
 }

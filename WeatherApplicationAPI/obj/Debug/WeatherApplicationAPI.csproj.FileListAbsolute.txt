@@ -66,3 +66,12 @@ C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\Weath
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\pl\System.Net.Http.Formatting.resources.dll
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\pl\System.Web.Http.resources.dll
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\pl\System.Web.Http.WebHost.resources.dll
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\Autofac.Integration.Owin.dll
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\Microsoft.Owin.dll
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\Owin.dll
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\System.Web.Http.Owin.dll
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\Autofac.Integration.Owin.xml
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\Microsoft.Owin.xml
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\System.Web.Http.Owin.xml

@@ -10,6 +10,6 @@ namespace WeatherApplicationAPI.WeatherService
 
         public string ApiUrl => "http://api.openweathermap.org";
 
-        public Units Units => Units.metric;
+        public Units Units => Units.Metric;
     }
 }
