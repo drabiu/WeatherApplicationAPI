@@ -11,16 +11,7 @@ namespace WeatherApplicationAPI
         public void Configuration(IAppBuilder app)
         {
             HttpConfiguration configuration = new HttpConfiguration();
-
             WebApiConfig.Register(configuration);
-
-            //ConfigureRoutes(configuration);
-
-            //ConfigureDependencyResolver(configuration, app);
-
-            //ConfigureJsonSerialization(configuration);
-            //configuration.Filters.Add(new GlobalExceptionFilter());
-            //configuration.MessageHandlers.Add(new MessageLoggingHandler());
 
             app.UseWebApi(configuration);
         }
