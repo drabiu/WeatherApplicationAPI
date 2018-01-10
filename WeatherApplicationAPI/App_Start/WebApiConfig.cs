@@ -12,8 +12,9 @@ namespace WeatherApplicationAPI
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
-            DIContainer container = new DIContainer();
-            _container = container.Create();
+            var builder = new ContainerBuilder();
+            DIContainerConfiguration containerConfiguration = new DIContainerConfiguration();
+            _container = containerConfiguration.Create(builder);
 
             // Web API routes
             config.MapHttpAttributeRoutes();

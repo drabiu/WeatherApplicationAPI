@@ -4,9 +4,9 @@ namespace WeatherServiceRestful.Models
 {
     public class Coord
     {
-        [JsonProperty("city")]
+        [JsonProperty("lon")]
         public double Lon { get; set; }
-        [JsonProperty("city")]
+        [JsonProperty("lat")]
         public double Lat { get; set; }
     }
 }

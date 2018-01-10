@@ -105,3 +105,15 @@ C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\Weath
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\System.Web.Http.Owin.dll
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\Microsoft.Owin.xml
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\System.Web.Http.Owin.xml
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\Microsoft.Owin.dll
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\Owin.dll
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\System.Web.Http.Cors.dll
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\System.Web.Http.Owin.dll
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\System.Web.Cors.dll
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\Microsoft.Owin.xml
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\System.Web.Http.Cors.xml
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\System.Web.Http.Owin.xml
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\Autofac.Integration.Owin.dll
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\Autofac.Integration.WebApi.Owin.dll
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\Autofac.Integration.Owin.xml
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationUnitTests\bin\Debug\Autofac.Integration.WebApi.Owin.xml

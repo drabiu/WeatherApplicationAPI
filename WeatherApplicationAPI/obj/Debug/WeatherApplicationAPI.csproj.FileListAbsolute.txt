@@ -75,3 +75,14 @@ C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\Weath
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\Microsoft.Owin.xml
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
 C:\Users\mdrab\Documents\Visual Studio 2017\Projects\WeatherApplicationAPI\WeatherApplicationAPI\bin\System.Web.Http.Owin.xml
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAPI\bin\Autofac.Integration.Owin.dll
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAPI\bin\Microsoft.Owin.dll
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAPI\bin\Owin.dll
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAPI\bin\System.Web.Http.Owin.dll
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAPI\bin\Autofac.Integration.Owin.xml
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAPI\bin\Microsoft.Owin.xml
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAPI\bin\System.Web.Http.Owin.xml
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAPI\bin\Autofac.Integration.WebApi.Owin.dll
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAPI\bin\Autofac.Integration.WebApi.Owin.xml
