@@ -26,20 +26,20 @@ namespace WeatherApplicationUnitTests
         }
 
         [Fact]
-        public void WeatherSerivceAdapterShouldCallWeatherService()
+        public async System.Threading.Tasks.Task WeatherSerivceAdapterShouldCallWeatherServiceAsync()
         {
             IWeatherService serviceAdapter = new WeatherServiceAdapter(_weatherService, _mapper);
 
             string city = "city";
             string country = "country";
 
-            serviceAdapter.GetCurrentWeatherForecast(city, country);
+            await serviceAdapter.GetCurrentWeatherForecast(city, country);
 
-            _weatherService.Received(1).CallWeatherService(Arg.Is<string>(city), Arg.Is<string>(country));
+            _weatherService.Received(1).CallWeatherServiceAsync(Arg.Is<string>(city), Arg.Is<string>(country));
         }
 
         [Fact]
-        public void WeatherSerivceAdapterShouldReturnWeather()
+        public async System.Threading.Tasks.Task WeatherSerivceAdapterShouldReturnWeatherAsync()
         {
             var forecast = new WeatherForecast();
             forecast.Temperature = new Temperature();
@@ -52,7 +52,7 @@ namespace WeatherApplicationUnitTests
             string city = "city";
             string country = "country";
 
-            var result = serviceAdapter.GetCurrentWeatherForecast(city, country);
+            var result =  await serviceAdapter.GetCurrentWeatherForecast(city, country);
 
             Assert.Equal(88, result.Humidity);
             Assert.Equal(16, result.Temperature.Value);

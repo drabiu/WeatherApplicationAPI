@@ -38,7 +38,7 @@ namespace WeatherApplicationIntegrationTests.Stubs
             //        Sys = new Sys() { Country = (string)x[0] }
             //    };
             //});   
-            weatherService.CallWeatherService(Arg.Any<string>(), Arg.Any<string>()).Returns(
+            weatherService.CallWeatherServiceAsync(Arg.Any<string>(), Arg.Any<string>()).Returns(
                 new WeatherService()
                 {
                     Main = new Main() { Humidity = 10, Temp = 10 },

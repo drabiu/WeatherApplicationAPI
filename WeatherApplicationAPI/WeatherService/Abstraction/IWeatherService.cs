@@ -1,9 +1,10 @@
-﻿using WeatherApplicationAPI.Models;
+﻿using System.Threading.Tasks;
+using WeatherApplicationAPI.Models;
 
 namespace WeatherApplicationAPI.WeatherService.Abstraction
 {
     public interface IWeatherService
     {
-        WeatherForecast GetCurrentWeatherForecast(string city, string country);
+        Task<WeatherForecast> GetCurrentWeatherForecast(string city, string country);
     }
 }

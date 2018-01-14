@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using System.Threading.Tasks;
 using WeatherApplicationAPI.Models;
 using WeatherApplicationAPI.WeatherService.Abstraction;
 using WeatherServiceRestful;
@@ -16,9 +17,9 @@ namespace WeatherApplicationAPI.WeatherService
             _mapper = mapper;
         }
 
-        public WeatherForecast GetCurrentWeatherForecast(string city, string country)
+        public async Task<WeatherForecast> GetCurrentWeatherForecast(string city, string country)
         {
-            var result = _weatherService.CallWeatherService(country, city);
+            var result = await _weatherService.CallWeatherServiceAsync(country, city);
             var weather = _mapper.Map<WeatherForecast>(result);
 
             return weather;

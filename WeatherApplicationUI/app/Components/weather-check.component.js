@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var forms_1 = require("@angular/forms");
 var router_1 = require("@angular/router");
-var WeatherCheckComponent = (function () {
+var WeatherCheckComponent = /** @class */ (function () {
     function WeatherCheckComponent(formBuilder, router) {
         this.formBuilder = formBuilder;
         this.router = router;
@@ -28,14 +28,14 @@ var WeatherCheckComponent = (function () {
         var country = location.value.Country;
         this.router.navigate(['/weather/' + city + '/' + country]);
     };
+    WeatherCheckComponent = __decorate([
+        core_1.Component({
+            templateUrl: "app/Components/weather-check.component.html",
+            styleUrls: ['app/Components/weather-card.css']
+        }),
+        __metadata("design:paramtypes", [forms_1.FormBuilder, router_1.Router])
+    ], WeatherCheckComponent);
     return WeatherCheckComponent;
 }());
-WeatherCheckComponent = __decorate([
-    core_1.Component({
-        templateUrl: "app/Components/weather-check.component.html",
-        styleUrls: ['app/Components/weather-card.css']
-    }),
-    __metadata("design:paramtypes", [forms_1.FormBuilder, router_1.Router])
-], WeatherCheckComponent);
 exports.WeatherCheckComponent = WeatherCheckComponent;
 //# sourceMappingURL=weather-check.component.js.map

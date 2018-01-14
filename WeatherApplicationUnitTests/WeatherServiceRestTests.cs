@@ -22,37 +22,37 @@ namespace WeatherApplicationUnitTests
         }
 
         [Fact]
-        public void CallWeatherServiceShouldCallRestClientExecuteWithCityAndCountryParameter()
+        public async System.Threading.Tasks.Task CallWeatherServiceShouldCallRestClientExecuteWithCityAndCountryParameterAsync()
         {
             var weatherService = new WeatherServiceRest(_serviceConfiguration, _restClient);
 
-            weatherService.CallWeatherService("country", "city");
+            await weatherService.CallWeatherServiceAsync("country", "city");
 
-            _restClient.Received(1).Execute<WeatherService>(Arg.Is<RestRequest>(a => a.Parameters.Any(p => p.Name == "q" && (string)p.Value == "city, country")));
+            await _restClient.Received(1).ExecuteTaskAsync<WeatherService>(Arg.Is<RestRequest>(a => a.Parameters.Any(p => p.Name == "q" && (string)p.Value == "city, country")));
         }
 
         [Fact]
-        public void CallWeatherServiceShouldCallRestClientExecuteWithUnitsParameter()
+        public async System.Threading.Tasks.Task CallWeatherServiceShouldCallRestClientExecuteWithUnitsParameterAsync()
         {
             _serviceConfiguration.Units.Returns(Units.Metric);
 
             var weatherService = new WeatherServiceRest(_serviceConfiguration, _restClient);
 
-            weatherService.CallWeatherService("country", "city");
+            await weatherService.CallWeatherServiceAsync("country", "city");
 
-            _restClient.Received(1).Execute<WeatherService>(Arg.Is<RestRequest>(a => a.Parameters.Any(p => p.Name == "units" && (string)p.Value == "Metric")));
+            await _restClient.Received(1).ExecuteTaskAsync<WeatherService>(Arg.Is<RestRequest>(a => a.Parameters.Any(p => p.Name == "units" && (string)p.Value == "Metric")));
         }
 
         [Fact]
-        public void CallWeatherServiceShouldCallRestClientExecuteWithApiKeyParameter()
+        public async System.Threading.Tasks.Task CallWeatherServiceShouldCallRestClientExecuteWithApiKeyParameterAsync()
         {
             _serviceConfiguration.ApiKey.Returns("key");
 
             var weatherService = new WeatherServiceRest(_serviceConfiguration, _restClient);
 
-            weatherService.CallWeatherService("country", "city");
+            await weatherService.CallWeatherServiceAsync("country", "city");
 
-            _restClient.Received(1).Execute<WeatherService>(Arg.Is<RestRequest>(a => a.Parameters.Any(p => p.Name == "appid" && (string)p.Value == "key")));
+            await _restClient.Received(1).ExecuteTaskAsync<WeatherService>(Arg.Is<RestRequest>(a => a.Parameters.Any(p => p.Name == "appid" && (string)p.Value == "key")));
         }
     }
 }

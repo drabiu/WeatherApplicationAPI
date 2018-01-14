@@ -16,7 +16,7 @@ require("rxjs/add/operator/map");
 require("rxjs/add/operator/do");
 require("rxjs/add/operator/catch");
 var global_1 = require("../Shared/global");
-var WeatherService = (function () {
+var WeatherService = /** @class */ (function () {
     function WeatherService(_http) {
         this._http = _http;
     }
@@ -33,11 +33,11 @@ var WeatherService = (function () {
         console.error(error);
         return Observable_1.Observable.throw(error.json().error || 'Server error');
     };
+    WeatherService = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.Http])
+    ], WeatherService);
     return WeatherService;
 }());
-WeatherService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [http_1.Http])
-], WeatherService);
 exports.WeatherService = WeatherService;
 //# sourceMappingURL=weather.service.js.map

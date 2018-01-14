@@ -61,7 +61,7 @@ namespace WeatherApplicationIntegrationTests
             //    };
             //});
 
-            weatherService.CallWeatherService(Arg.Any<string>(), Arg.Any<string>()).Returns(x =>
+            weatherService.CallWeatherServiceAsync(Arg.Any<string>(), Arg.Any<string>()).Returns(x =>
             {
                 return new WeatherService()
                 {

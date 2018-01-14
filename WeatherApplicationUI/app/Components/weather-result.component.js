@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var weather_service_1 = require("../Service/weather.service");
 var router_1 = require("@angular/router");
-var WeatherResultComponent = (function () {
+var WeatherResultComponent = /** @class */ (function () {
     function WeatherResultComponent(weatherService, activatedRoute) {
         var _this = this;
         this.weatherService = weatherService;
@@ -33,14 +33,14 @@ var WeatherResultComponent = (function () {
             console.log(error);
         });
     };
+    WeatherResultComponent = __decorate([
+        core_1.Component({
+            templateUrl: "app/Components/weather-result.component.html",
+            styleUrls: ['app/Components/weather-card.css']
+        }),
+        __metadata("design:paramtypes", [weather_service_1.WeatherService, router_1.ActivatedRoute])
+    ], WeatherResultComponent);
     return WeatherResultComponent;
 }());
-WeatherResultComponent = __decorate([
-    core_1.Component({
-        templateUrl: "app/Components/weather-result.component.html",
-        styleUrls: ['app/Components/weather-card.css']
-    }),
-    __metadata("design:paramtypes", [weather_service_1.WeatherService, router_1.ActivatedRoute])
-], WeatherResultComponent);
 exports.WeatherResultComponent = WeatherResultComponent;
 //# sourceMappingURL=weather-result.component.js.map

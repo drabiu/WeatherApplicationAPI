@@ -1,5 +1,6 @@
 ﻿using RestSharp;
 using System;
+using System.Threading.Tasks;
 using WeatherServiceRestful.Abstraction;
 using WeatherServiceRestful.Models;
 
@@ -22,7 +23,7 @@ namespace WeatherServiceRestful
             _restClient = restClient;
         }
 
-        public WeatherService CallWeatherService(string country, string city)
+        public async Task<WeatherService> CallWeatherServiceAsync(string country, string city)
         {
             _restClient.BaseUrl = new Uri(_apiUrl);
 
@@ -32,7 +33,7 @@ namespace WeatherServiceRestful
             request.AddParameter("units", _units);
             request.AddParameter("appid", _apiKey);
 
-            IRestResponse<WeatherService> response = _restClient.Execute<WeatherService>(request);
+            IRestResponse<WeatherService> response = await _restClient.ExecuteTaskAsync<WeatherService>(request);
 
             return response.Data;
         }
