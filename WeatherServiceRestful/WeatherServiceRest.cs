@@ -7,7 +7,7 @@ using Extensions.RestSharpExtensions;
 
 namespace WeatherServiceRestful
 {
-    public class WeatherServiceRest
+    public class WeatherServiceRest : IWeatherServiceRest
     {
         private readonly string _apiKey;
         private readonly string _units;
@@ -32,7 +32,7 @@ namespace WeatherServiceRestful
             request.RequestFormat = DataFormat.Json;
             request.AddParameter("q", string.Format("{0}, {1}", city, country));
             request.AddParameter("units", _units);
-            //request.AddParameter("appid", _apiKey);
+            request.AddParameter("appid", _apiKey);
 
             IRestResponse<WeatherService> response = await _restClient.ExecuteTaskAsync<WeatherService>(request);
             _restClient.EnsureResponseWasSuccessful(request, response);

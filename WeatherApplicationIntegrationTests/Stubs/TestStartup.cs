@@ -28,8 +28,9 @@ namespace WeatherApplicationIntegrationTests.Stubs
             config.Units.Returns(Units.Metric);
             config.ApiKey.Returns("aaa");
 
-            var restClient = Substitute.For<IRestClient>();
-            var weatherService = Substitute.For<WeatherServiceRest>(config, restClient);
+            //var restClient = Substitute.For<IRestClient>();
+            //var weatherService = Substitute.For<IWeatherServiceRest>(config, restClient);
+            var weatherService = Substitute.For<IWeatherServiceRest>();
             //weatherService.CallWeatherService(Arg.Any<string>(), Arg.Any<string>()).Returns(x => {
             //    return new WeatherService()
             //    {
@@ -51,7 +52,7 @@ namespace WeatherApplicationIntegrationTests.Stubs
             builder.RegisterInstance(config).As<IWeatherServiceRestConfiguration>();
             builder.RegisterType<WeatherServiceAdapter>().As<IWeatherService>();
             builder.RegisterType<RestClient>().As<IRestClient>();
-            builder.RegisterInstance(weatherService).AsSelf();
+            builder.RegisterInstance(weatherService).As<IWeatherServiceRest>();
 
             RegisterAutoMapper(builder);
 

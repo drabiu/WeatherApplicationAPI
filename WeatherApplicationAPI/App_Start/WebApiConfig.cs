@@ -2,6 +2,7 @@
 using Autofac.Integration.WebApi;
 using System.Web.Http;
 using WeatherApplicationAPI.App_Start;
+using WeatherApplicationAPI.Logging;
 
 namespace WeatherApplicationAPI
 {
@@ -25,6 +26,8 @@ namespace WeatherApplicationAPI
                 defaults: new { id = RouteParameter.Optional }
             );
 
+            config.Filters.Add(new GlobalExceptionFilter());
+            config.MessageHandlers.Add(new MessageLoggingHandler());
             config.DependencyResolver = new AutofacWebApiDependencyResolver(_container);
         }
     }

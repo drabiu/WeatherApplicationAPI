@@ -86,3 +86,4 @@ C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAPI\bin\
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAPI\bin\System.Web.Http.Owin.xml
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAPI\bin\Autofac.Integration.WebApi.Owin.dll
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAPI\bin\Autofac.Integration.WebApi.Owin.xml
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationAPI\bin\NLog.config

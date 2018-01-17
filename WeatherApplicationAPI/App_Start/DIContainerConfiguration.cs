@@ -20,7 +20,7 @@ namespace WeatherApplicationAPI.App_Start
 
             builder.RegisterType<WeatherServiceConfiguration>().As<IWeatherServiceRestConfiguration>();
             builder.RegisterType<WeatherServiceAdapter>().As<IWeatherService>();
-            builder.RegisterType<WeatherServiceRest>().AsSelf();
+            builder.RegisterType<WeatherServiceRest>().As<IWeatherServiceRest>();
             builder.RegisterType<RestClient>().As<IRestClient>();
 
             RegisterAutoMapper(builder);

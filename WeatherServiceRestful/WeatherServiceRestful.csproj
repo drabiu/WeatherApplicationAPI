@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstraction\IWeatherServiceRest.cs" />
     <Compile Include="Abstraction\IWeatherServiceRestConfiguration.cs" />
     <Compile Include="Enums\Units.cs" />
     <Compile Include="Extensions\RestSharpExtensions.cs" />

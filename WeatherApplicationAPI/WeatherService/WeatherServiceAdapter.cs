@@ -3,15 +3,16 @@ using System.Threading.Tasks;
 using WeatherApplicationAPI.Models;
 using WeatherApplicationAPI.WeatherService.Abstraction;
 using WeatherServiceRestful;
+using WeatherServiceRestful.Abstraction;
 
 namespace WeatherApplicationAPI.WeatherService
 {
     public class WeatherServiceAdapter : IWeatherService
     {
-        private readonly WeatherServiceRest _weatherService;
+        private readonly IWeatherServiceRest _weatherService;
         private readonly IMapper _mapper;
 
-        public WeatherServiceAdapter(WeatherServiceRest weatherServiceRest, IMapper mapper)
+        public WeatherServiceAdapter(IWeatherServiceRest weatherServiceRest, IMapper mapper)
         {
             _weatherService = weatherServiceRest;
             _mapper = mapper;

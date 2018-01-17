@@ -3,15 +3,12 @@ using AutoMapper;
 using Microsoft.Owin.Testing;
 using Newtonsoft.Json;
 using NSubstitute;
-using RestSharp;
 using WeatherApplicationAPI.App_Start;
 using WeatherApplicationAPI.Models;
 using WeatherApplicationAPI.WeatherService;
 using WeatherApplicationAPI.WeatherService.Abstraction;
 using WeatherApplicationIntegrationTests.Stubs;
-using WeatherServiceRestful;
 using WeatherServiceRestful.Abstraction;
-using WeatherServiceRestful.Enums;
 using WeatherServiceRestful.Models;
 using Xunit;
 
@@ -43,13 +40,14 @@ namespace WeatherApplicationIntegrationTests
             DIContainerConfiguration container = new DIContainerConfiguration();
             var builder = new ContainerBuilder();
             var autofac = container.Create(builder);
-            var config = Substitute.For<IWeatherServiceRestConfiguration>();
-            config.ApiUrl.Returns("http://url");
-            config.Units.Returns(Units.Metric);
-            config.ApiKey.Returns("aaa");
+            //var config = Substitute.For<IWeatherServiceRestConfiguration>();
+            //config.ApiUrl.Returns("http://url");
+            //config.Units.Returns(Units.Metric);
+            //config.ApiKey.Returns("aaa");
 
-            var restClient = Substitute.For<IRestClient>();
-            var weatherService = Substitute.For<WeatherServiceRest>(config, restClient);
+            //var restClient = Substitute.For<IRestClient>();
+            //var weatherService = Substitute.For<IWeatherServiceRest>(config, restClient);
+            var weatherService = Substitute.For<IWeatherServiceRest>();
 
             //weatherService.CallWeatherService(Arg.Any<string>(), Arg.Any<string>()).Returns(x =>
             //{

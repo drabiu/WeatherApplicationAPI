@@ -127,3 +127,6 @@ C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationIntegrat
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationIntegrationTests\bin\Debug\Autofac.Integration.Owin.xml
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationIntegrationTests\bin\Debug\Autofac.Integration.WebApi.Owin.xml
 C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationIntegrationTests\bin\Debug\Castle.Core.xml
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationIntegrationTests\bin\Debug\NLog.config
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationIntegrationTests\bin\Debug\NLog.dll
+C:\Users\drabi\Documents\GitHub\WeatherApplicationAPI\WeatherApplicationIntegrationTests\bin\Debug\NLog.xml

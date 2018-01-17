@@ -7,6 +7,7 @@ using RestSharp;
 using WeatherApplicationAPI.Models;
 using WeatherServiceRestful;
 using WeatherServiceRestful.Abstraction;
+using System.Threading.Tasks;
 
 namespace WeatherApplicationUnitTests
 {
@@ -26,7 +27,7 @@ namespace WeatherApplicationUnitTests
         }
 
         [Fact]
-        public async System.Threading.Tasks.Task WeatherSerivceAdapterShouldCallWeatherServiceAsync()
+        public async Task WeatherSerivceAdapterShouldCallWeatherServiceAsync()
         {
             IWeatherService serviceAdapter = new WeatherServiceAdapter(_weatherService, _mapper);
 
@@ -35,11 +36,11 @@ namespace WeatherApplicationUnitTests
 
             await serviceAdapter.GetCurrentWeatherForecast(city, country);
 
-            _weatherService.Received(1).CallWeatherServiceAsync(Arg.Is<string>(city), Arg.Is<string>(country));
+            await _weatherService.Received(1).CallWeatherServiceAsync(Arg.Is<string>(city), Arg.Is<string>(country));
         }
 
         [Fact]
-        public async System.Threading.Tasks.Task WeatherSerivceAdapterShouldReturnWeatherAsync()
+        public async Task WeatherSerivceAdapterShouldReturnWeatherAsync()
         {
             var forecast = new WeatherForecast();
             forecast.Temperature = new Temperature();
