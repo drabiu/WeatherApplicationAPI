@@ -128,6 +128,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\DIContainerConfiguration.cs" />
+    <Compile Include="App_Start\SerializationConfiguration.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\WeatherController.cs" />
     <Compile Include="Enums\TempUnits.cs" />

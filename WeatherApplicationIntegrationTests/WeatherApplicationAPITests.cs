@@ -3,6 +3,7 @@ using AutoMapper;
 using Microsoft.Owin.Testing;
 using Newtonsoft.Json;
 using NSubstitute;
+using WeatherApplicationAPI;
 using WeatherApplicationAPI.App_Start;
 using WeatherApplicationAPI.Models;
 using WeatherApplicationAPI.WeatherService;
@@ -22,7 +23,8 @@ namespace WeatherApplicationIntegrationTests
         [InlineData("Russia", "Moscow")]
         public async void WeatherAdapterShouldReturnWeatherForGivenCity(string country, string city)
         {
-            using (var server = TestServer.Create<TestStartup>())
+            //using (var server = TestServer.Create<TestStartup>())
+            using (var server = TestServer.Create<Startup>())
             {
                 var result = await server.HttpClient.GetAsync($"api/weather/{country}/{city}");
                 string responseContent = await result.Content.ReadAsStringAsync();

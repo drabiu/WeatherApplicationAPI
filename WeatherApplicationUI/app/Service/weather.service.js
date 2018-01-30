@@ -13,7 +13,6 @@ var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 var Observable_1 = require("rxjs/Observable");
 require("rxjs/add/operator/map");
-require("rxjs/add/operator/do");
 require("rxjs/add/operator/catch");
 var global_1 = require("../Shared/global");
 var WeatherService = /** @class */ (function () {
@@ -21,17 +20,27 @@ var WeatherService = /** @class */ (function () {
         this._http = _http;
     }
     WeatherService.prototype.get = function (country, city) {
+        var _this = this;
         var getHeaders = new http_1.Headers();
         //getHeaders.append('Content-Type', 'application/json'); 
         //getHeaders.append('Access-Control-Allow-Origin', '*');
         var options = new http_1.RequestOptions({ headers: getHeaders });
         return this._http.get(global_1.Global.BASE_WEATHER_ENDPOINT + country + '/' + city, options)
-            .map(function (response) { return response.json(); })
-            .catch(this.handleError);
+            .map(function (response) {
+            if (response.status === 200) {
+                return response.json();
+            }
+            else {
+                return _this.handleError(response);
+            }
+        })
+            .catch(function (error) {
+            return _this.handleError(error);
+        });
     };
     WeatherService.prototype.handleError = function (error) {
         console.error(error);
-        return Observable_1.Observable.throw(error.json().error || 'Server error');
+        return Observable_1.Observable.throw(error);
     };
     WeatherService = __decorate([
         core_1.Injectable(),

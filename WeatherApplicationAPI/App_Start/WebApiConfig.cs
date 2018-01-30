@@ -26,6 +26,8 @@ namespace WeatherApplicationAPI
                 defaults: new { id = RouteParameter.Optional }
             );
 
+            SerializationConfiguration.JsonSerialization(config);
+
             config.Filters.Add(new GlobalExceptionFilter());
             config.MessageHandlers.Add(new MessageLoggingHandler());
             config.DependencyResolver = new AutofacWebApiDependencyResolver(_container);
